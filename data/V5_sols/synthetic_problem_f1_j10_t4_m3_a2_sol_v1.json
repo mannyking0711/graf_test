@@ -1,0 +1,3005 @@
+{
+    "id": "1",
+    "problem_id": "1",
+    "generated_date": "2023-07-25T11:43:41.164986",
+    "schedule": [
+        {
+            "job_id": 0,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 2,
+            "start_time": "2022-05-24T03:31:00",
+            "finish_time": "2022-05-24T04:00:00",
+            "total_consumption": 33.07,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 33.07
+                }
+            ],
+            "cost": 65.15
+        },
+        {
+            "job_id": 1,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T03:48:00",
+            "finish_time": "2022-05-24T04:18:00",
+            "total_consumption": 38.01,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 38.01
+                }
+            ],
+            "cost": 69.65
+        },
+        {
+            "job_id": 2,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T15:50:00",
+            "finish_time": "2022-05-24T16:22:00",
+            "total_consumption": 48.53,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 48.53
+                }
+            ],
+            "cost": 29.86
+        },
+        {
+            "job_id": 2,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T16:23:00",
+            "finish_time": "2022-05-24T16:49:00",
+            "total_consumption": 59.51,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 59.51
+                }
+            ],
+            "cost": 15.34
+        },
+        {
+            "job_id": 2,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T16:53:00",
+            "finish_time": "2022-05-24T17:13:00",
+            "total_consumption": 41.6,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 41.6
+                }
+            ],
+            "cost": 14.31
+        },
+        {
+            "job_id": 2,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T17:14:00",
+            "finish_time": "2022-05-24T18:04:00",
+            "total_consumption": 68.42,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 68.42
+                }
+            ],
+            "cost": 27.46
+        },
+        {
+            "job_id": 3,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T02:14:00",
+            "finish_time": "2022-05-24T02:33:00",
+            "total_consumption": 35.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 35.56
+                }
+            ],
+            "cost": 62.13
+        },
+        {
+            "job_id": 4,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T07:23:00",
+            "finish_time": "2022-05-24T07:42:00",
+            "total_consumption": 41.46,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 41.46
+                }
+            ],
+            "cost": 57.38
+        },
+        {
+            "job_id": 4,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T07:52:00",
+            "finish_time": "2022-05-24T08:07:00",
+            "total_consumption": 35.05,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 35.05
+                }
+            ],
+            "cost": 45.47
+        },
+        {
+            "job_id": 5,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T18:23:00",
+            "finish_time": "2022-05-24T18:36:00",
+            "total_consumption": 23.7,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 23.7
+                }
+            ],
+            "cost": 13.39
+        },
+        {
+            "job_id": 5,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T18:44:00",
+            "finish_time": "2022-05-24T18:58:00",
+            "total_consumption": 43.13,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 43.13
+                }
+            ],
+            "cost": 24.36
+        },
+        {
+            "job_id": 5,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T19:00:00",
+            "finish_time": "2022-05-24T19:20:00",
+            "total_consumption": 71.43,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 71.43
+                }
+            ],
+            "cost": 42.2
+        },
+        {
+            "job_id": 6,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T04:45:00",
+            "finish_time": "2022-05-24T05:06:00",
+            "total_consumption": 31.73,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 31.73
+                }
+            ],
+            "cost": 53.85
+        },
+        {
+            "job_id": 6,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 2,
+            "start_time": "2022-05-24T05:06:00",
+            "finish_time": "2022-05-24T05:32:00",
+            "total_consumption": 52.62,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 52.62
+                }
+            ],
+            "cost": 81.64
+        },
+        {
+            "job_id": 6,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T05:32:00",
+            "finish_time": "2022-05-24T06:07:00",
+            "total_consumption": 84.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 84.0
+                }
+            ],
+            "cost": 128.38
+        },
+        {
+            "job_id": 7,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T16:46:00",
+            "finish_time": "2022-05-24T17:14:00",
+            "total_consumption": 91.93,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 91.93
+                }
+            ],
+            "cost": 30.1
+        },
+        {
+            "job_id": 7,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T17:14:00",
+            "finish_time": "2022-05-24T18:23:00",
+            "total_consumption": 103.58,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 103.58
+                }
+            ],
+            "cost": 46.69
+        },
+        {
+            "job_id": 7,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T18:23:00",
+            "finish_time": "2022-05-24T18:42:00",
+            "total_consumption": 57.08,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 57.08
+                }
+            ],
+            "cost": 32.3
+        },
+        {
+            "job_id": 8,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 2,
+            "start_time": "2022-05-24T06:22:00",
+            "finish_time": "2022-05-24T06:50:00",
+            "total_consumption": 42.09,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 42.09
+                }
+            ],
+            "cost": 59.08
+        },
+        {
+            "job_id": 8,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 2,
+            "start_time": "2022-05-24T06:54:00",
+            "finish_time": "2022-05-24T07:08:00",
+            "total_consumption": 68.39,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 68.39
+                }
+            ],
+            "cost": 95.44
+        },
+        {
+            "job_id": 8,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T07:08:00",
+            "finish_time": "2022-05-24T07:35:00",
+            "total_consumption": 19.04,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 19.04
+                }
+            ],
+            "cost": 26.19
+        },
+        {
+            "job_id": 8,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T07:35:00",
+            "finish_time": "2022-05-24T07:49:00",
+            "total_consumption": 54.18,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 54.18
+                }
+            ],
+            "cost": 75.04
+        },
+        {
+            "job_id": 9,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T18:36:00",
+            "finish_time": "2022-05-24T19:05:00",
+            "total_consumption": 46.95,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 46.95
+                }
+            ],
+            "cost": 26.59
+        },
+        {
+            "job_id": 9,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T19:05:00",
+            "finish_time": "2022-05-24T19:27:00",
+            "total_consumption": 32.63,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 32.63
+                }
+            ],
+            "cost": 19.14
+        },
+        {
+            "job_id": 9,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 1,
+            "start_time": "2022-05-24T19:27:00",
+            "finish_time": "2022-05-24T19:44:00",
+            "total_consumption": 27.71,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 27.71
+                }
+            ],
+            "cost": 16.32
+        },
+        {
+            "job_id": 9,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2022-05-24T19:44:00",
+            "finish_time": "2022-05-24T20:11:00",
+            "total_consumption": 34.24,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 34.24
+                }
+            ],
+            "cost": 34.86
+        }
+    ],
+    "statistics": [
+        {
+            "type": "FACTORY_STATS",
+            "id": [
+                0,
+                0
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-25T11:59:59",
+            "total_consumption": 1283.0,
+            "consumptions": [],
+            "cost": 86967.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                0
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T03:59:53.333333",
+            "total_consumption": 8131.0,
+            "consumptions": [],
+            "cost": 12846.980000000001
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T03:59:53.333333",
+            "total_consumption": 4939.0,
+            "consumptions": [],
+            "cost": 7803.620000000001
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T03:59:53.333333",
+            "total_consumption": 3192.0,
+            "consumptions": [],
+            "cost": 5043.360000000001
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                0,
+                2
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T03:59:53.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                1
+            ],
+            "start_time": "2022-05-24T03:59:53.333333",
+            "finish_time": "2022-05-24T07:59:46.666667",
+            "total_consumption": 43444.0,
+            "consumptions": [],
+            "cost": 53870.56
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                1,
+                0
+            ],
+            "start_time": "2022-05-24T03:59:53.333333",
+            "finish_time": "2022-05-24T07:59:46.666667",
+            "total_consumption": 4284.0,
+            "consumptions": [],
+            "cost": 5312.16
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                1,
+                1
+            ],
+            "start_time": "2022-05-24T03:59:53.333333",
+            "finish_time": "2022-05-24T07:59:46.666667",
+            "total_consumption": 23447.0,
+            "consumptions": [],
+            "cost": 29074.28
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                1,
+                2
+            ],
+            "start_time": "2022-05-24T03:59:53.333333",
+            "finish_time": "2022-05-24T07:59:46.666667",
+            "total_consumption": 15713.0,
+            "consumptions": [],
+            "cost": 19484.12
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                2
+            ],
+            "start_time": "2022-05-24T07:59:46.666667",
+            "finish_time": "2022-05-24T11:59:40",
+            "total_consumption": 1864.0,
+            "consumptions": [],
+            "cost": 2106.3199999999997
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                2,
+                0
+            ],
+            "start_time": "2022-05-24T07:59:46.666667",
+            "finish_time": "2022-05-24T11:59:40",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                2,
+                1
+            ],
+            "start_time": "2022-05-24T07:59:46.666667",
+            "finish_time": "2022-05-24T11:59:40",
+            "total_consumption": 1864.0,
+            "consumptions": [],
+            "cost": 2106.3199999999997
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                2,
+                2
+            ],
+            "start_time": "2022-05-24T07:59:46.666667",
+            "finish_time": "2022-05-24T11:59:40",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                3
+            ],
+            "start_time": "2022-05-24T11:59:40",
+            "finish_time": "2022-05-24T15:59:33.333333",
+            "total_consumption": 1359.0,
+            "consumptions": [],
+            "cost": 1902.6
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                3,
+                0
+            ],
+            "start_time": "2022-05-24T11:59:40",
+            "finish_time": "2022-05-24T15:59:33.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                3,
+                1
+            ],
+            "start_time": "2022-05-24T11:59:40",
+            "finish_time": "2022-05-24T15:59:33.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                3,
+                2
+            ],
+            "start_time": "2022-05-24T11:59:40",
+            "finish_time": "2022-05-24T15:59:33.333333",
+            "total_consumption": 1359.0,
+            "consumptions": [],
+            "cost": 1902.6
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                4
+            ],
+            "start_time": "2022-05-24T15:59:33.333333",
+            "finish_time": "2022-05-24T19:59:26.666667",
+            "total_consumption": 71999.0,
+            "consumptions": [],
+            "cost": 14399.800000000001
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                4,
+                0
+            ],
+            "start_time": "2022-05-24T15:59:33.333333",
+            "finish_time": "2022-05-24T19:59:26.666667",
+            "total_consumption": 21650.0,
+            "consumptions": [],
+            "cost": 4330.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                4,
+                1
+            ],
+            "start_time": "2022-05-24T15:59:33.333333",
+            "finish_time": "2022-05-24T19:59:26.666667",
+            "total_consumption": 28767.0,
+            "consumptions": [],
+            "cost": 5753.400000000001
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                4,
+                2
+            ],
+            "start_time": "2022-05-24T15:59:33.333333",
+            "finish_time": "2022-05-24T19:59:26.666667",
+            "total_consumption": 21582.0,
+            "consumptions": [],
+            "cost": 4316.400000000001
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                5
+            ],
+            "start_time": "2022-05-24T19:59:26.666667",
+            "finish_time": "2022-05-24T23:59:20",
+            "total_consumption": 1512.0,
+            "consumptions": [],
+            "cost": 1859.76
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                5,
+                0
+            ],
+            "start_time": "2022-05-24T19:59:26.666667",
+            "finish_time": "2022-05-24T23:59:20",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                5,
+                1
+            ],
+            "start_time": "2022-05-24T19:59:26.666667",
+            "finish_time": "2022-05-24T23:59:20",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                5,
+                2
+            ],
+            "start_time": "2022-05-24T19:59:26.666667",
+            "finish_time": "2022-05-24T23:59:20",
+            "total_consumption": 1512.0,
+            "consumptions": [],
+            "cost": 1859.76
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                6
+            ],
+            "start_time": "2022-05-24T23:59:20",
+            "finish_time": "2022-05-25T03:59:13.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                6,
+                0
+            ],
+            "start_time": "2022-05-24T23:59:20",
+            "finish_time": "2022-05-25T03:59:13.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                6,
+                1
+            ],
+            "start_time": "2022-05-24T23:59:20",
+            "finish_time": "2022-05-25T03:59:13.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                6,
+                2
+            ],
+            "start_time": "2022-05-24T23:59:20",
+            "finish_time": "2022-05-25T03:59:13.333333",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                7
+            ],
+            "start_time": "2022-05-25T03:59:13.333333",
+            "finish_time": "2022-05-25T07:59:06.666667",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                7,
+                0
+            ],
+            "start_time": "2022-05-25T03:59:13.333333",
+            "finish_time": "2022-05-25T07:59:06.666667",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                7,
+                1
+            ],
+            "start_time": "2022-05-25T03:59:13.333333",
+            "finish_time": "2022-05-25T07:59:06.666667",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                7,
+                2
+            ],
+            "start_time": "2022-05-25T03:59:13.333333",
+            "finish_time": "2022-05-25T07:59:06.666667",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                0,
+                8
+            ],
+            "start_time": "2022-05-25T07:59:06.666667",
+            "finish_time": "2022-05-25T11:59:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                8,
+                0
+            ],
+            "start_time": "2022-05-25T07:59:06.666667",
+            "finish_time": "2022-05-25T11:59:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                8,
+                1
+            ],
+            "start_time": "2022-05-25T07:59:06.666667",
+            "finish_time": "2022-05-25T11:59:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                0,
+                8,
+                2
+            ],
+            "start_time": "2022-05-25T07:59:06.666667",
+            "finish_time": "2022-05-25T11:59:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "FACTORY_STATS",
+            "id": [
+                0,
+                1
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-25T11:59:59",
+            "total_consumption": 1283.0,
+            "consumptions": [],
+            "cost": 31951.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                0
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                0,
+                0
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                0,
+                1
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                0,
+                2
+            ],
+            "start_time": "2022-05-24T00:00:00",
+            "finish_time": "2022-05-24T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                1
+            ],
+            "start_time": "2022-05-24T01:00:00",
+            "finish_time": "2022-05-24T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                1,
+                0
+            ],
+            "start_time": "2022-05-24T01:00:00",
+            "finish_time": "2022-05-24T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                1,
+                1
+            ],
+            "start_time": "2022-05-24T01:00:00",
+            "finish_time": "2022-05-24T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                1,
+                2
+            ],
+            "start_time": "2022-05-24T01:00:00",
+            "finish_time": "2022-05-24T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                2
+            ],
+            "start_time": "2022-05-24T02:00:00",
+            "finish_time": "2022-05-24T03:00:00",
+            "total_consumption": 3553.0,
+            "consumptions": [],
+            "cost": 621.88159
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                2,
+                0
+            ],
+            "start_time": "2022-05-24T02:00:00",
+            "finish_time": "2022-05-24T03:00:00",
+            "total_consumption": 3553.0,
+            "consumptions": [],
+            "cost": 621.88159
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                2,
+                1
+            ],
+            "start_time": "2022-05-24T02:00:00",
+            "finish_time": "2022-05-24T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                2,
+                2
+            ],
+            "start_time": "2022-05-24T02:00:00",
+            "finish_time": "2022-05-24T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                3
+            ],
+            "start_time": "2022-05-24T03:00:00",
+            "finish_time": "2022-05-24T04:00:00",
+            "total_consumption": 4818.0,
+            "consumptions": [],
+            "cost": 1954.6144199999999
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                3,
+                0
+            ],
+            "start_time": "2022-05-24T03:00:00",
+            "finish_time": "2022-05-24T04:00:00",
+            "total_consumption": 1512.0,
+            "consumptions": [],
+            "cost": 613.40328
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                3,
+                1
+            ],
+            "start_time": "2022-05-24T03:00:00",
+            "finish_time": "2022-05-24T04:00:00",
+            "total_consumption": 3306.0,
+            "consumptions": [],
+            "cost": 1341.21114
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                3,
+                2
+            ],
+            "start_time": "2022-05-24T03:00:00",
+            "finish_time": "2022-05-24T04:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                4
+            ],
+            "start_time": "2022-05-24T04:00:00",
+            "finish_time": "2022-05-24T05:00:00",
+            "total_consumption": 4533.0,
+            "consumptions": [],
+            "cost": 2349.54456
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                4,
+                0
+            ],
+            "start_time": "2022-05-24T04:00:00",
+            "finish_time": "2022-05-24T05:00:00",
+            "total_consumption": 2268.0,
+            "consumptions": [],
+            "cost": 1175.54976
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                4,
+                1
+            ],
+            "start_time": "2022-05-24T04:00:00",
+            "finish_time": "2022-05-24T05:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                4,
+                2
+            ],
+            "start_time": "2022-05-24T04:00:00",
+            "finish_time": "2022-05-24T05:00:00",
+            "total_consumption": 2265.0,
+            "consumptions": [],
+            "cost": 1173.9948
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                5
+            ],
+            "start_time": "2022-05-24T05:00:00",
+            "finish_time": "2022-05-24T06:00:00",
+            "total_consumption": 12878.0,
+            "consumptions": [],
+            "cost": 4132.16386
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                5,
+                0
+            ],
+            "start_time": "2022-05-24T05:00:00",
+            "finish_time": "2022-05-24T06:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                5,
+                1
+            ],
+            "start_time": "2022-05-24T05:00:00",
+            "finish_time": "2022-05-24T06:00:00",
+            "total_consumption": 5252.0,
+            "consumptions": [],
+            "cost": 1685.20924
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                5,
+                2
+            ],
+            "start_time": "2022-05-24T05:00:00",
+            "finish_time": "2022-05-24T06:00:00",
+            "total_consumption": 7626.0,
+            "consumptions": [],
+            "cost": 2446.95462
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                6
+            ],
+            "start_time": "2022-05-24T06:00:00",
+            "finish_time": "2022-05-24T07:00:00",
+            "total_consumption": 8808.0,
+            "consumptions": [],
+            "cost": 1512.42168
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                6,
+                0
+            ],
+            "start_time": "2022-05-24T06:00:00",
+            "finish_time": "2022-05-24T07:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                6,
+                1
+            ],
+            "start_time": "2022-05-24T06:00:00",
+            "finish_time": "2022-05-24T07:00:00",
+            "total_consumption": 7128.0,
+            "consumptions": [],
+            "cost": 1223.94888
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                6,
+                2
+            ],
+            "start_time": "2022-05-24T06:00:00",
+            "finish_time": "2022-05-24T07:00:00",
+            "total_consumption": 1680.0,
+            "consumptions": [],
+            "cost": 288.4728
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                7
+            ],
+            "start_time": "2022-05-24T07:00:00",
+            "finish_time": "2022-05-24T08:00:00",
+            "total_consumption": 17218.0,
+            "consumptions": [],
+            "cost": 2559.11134
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                7,
+                0
+            ],
+            "start_time": "2022-05-24T07:00:00",
+            "finish_time": "2022-05-24T08:00:00",
+            "total_consumption": 1890.0,
+            "consumptions": [],
+            "cost": 280.91069999999996
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                7,
+                1
+            ],
+            "start_time": "2022-05-24T07:00:00",
+            "finish_time": "2022-05-24T08:00:00",
+            "total_consumption": 11186.0,
+            "consumptions": [],
+            "cost": 1662.5751799999998
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                7,
+                2
+            ],
+            "start_time": "2022-05-24T07:00:00",
+            "finish_time": "2022-05-24T08:00:00",
+            "total_consumption": 4142.0,
+            "consumptions": [],
+            "cost": 615.62546
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                8
+            ],
+            "start_time": "2022-05-24T08:00:00",
+            "finish_time": "2022-05-24T09:00:00",
+            "total_consumption": 1631.0,
+            "consumptions": [],
+            "cost": 141.63604
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                8,
+                0
+            ],
+            "start_time": "2022-05-24T08:00:00",
+            "finish_time": "2022-05-24T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                8,
+                1
+            ],
+            "start_time": "2022-05-24T08:00:00",
+            "finish_time": "2022-05-24T09:00:00",
+            "total_consumption": 1631.0,
+            "consumptions": [],
+            "cost": 141.63604
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                8,
+                2
+            ],
+            "start_time": "2022-05-24T08:00:00",
+            "finish_time": "2022-05-24T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                9
+            ],
+            "start_time": "2022-05-24T09:00:00",
+            "finish_time": "2022-05-24T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                9,
+                0
+            ],
+            "start_time": "2022-05-24T09:00:00",
+            "finish_time": "2022-05-24T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                9,
+                1
+            ],
+            "start_time": "2022-05-24T09:00:00",
+            "finish_time": "2022-05-24T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                9,
+                2
+            ],
+            "start_time": "2022-05-24T09:00:00",
+            "finish_time": "2022-05-24T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                10
+            ],
+            "start_time": "2022-05-24T10:00:00",
+            "finish_time": "2022-05-24T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                10,
+                0
+            ],
+            "start_time": "2022-05-24T10:00:00",
+            "finish_time": "2022-05-24T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                10,
+                1
+            ],
+            "start_time": "2022-05-24T10:00:00",
+            "finish_time": "2022-05-24T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                10,
+                2
+            ],
+            "start_time": "2022-05-24T10:00:00",
+            "finish_time": "2022-05-24T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                11
+            ],
+            "start_time": "2022-05-24T11:00:00",
+            "finish_time": "2022-05-24T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                11,
+                0
+            ],
+            "start_time": "2022-05-24T11:00:00",
+            "finish_time": "2022-05-24T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                11,
+                1
+            ],
+            "start_time": "2022-05-24T11:00:00",
+            "finish_time": "2022-05-24T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                11,
+                2
+            ],
+            "start_time": "2022-05-24T11:00:00",
+            "finish_time": "2022-05-24T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                12
+            ],
+            "start_time": "2022-05-24T12:00:00",
+            "finish_time": "2022-05-24T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                12,
+                0
+            ],
+            "start_time": "2022-05-24T12:00:00",
+            "finish_time": "2022-05-24T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                12,
+                1
+            ],
+            "start_time": "2022-05-24T12:00:00",
+            "finish_time": "2022-05-24T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                12,
+                2
+            ],
+            "start_time": "2022-05-24T12:00:00",
+            "finish_time": "2022-05-24T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                13
+            ],
+            "start_time": "2022-05-24T13:00:00",
+            "finish_time": "2022-05-24T14:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                13,
+                0
+            ],
+            "start_time": "2022-05-24T13:00:00",
+            "finish_time": "2022-05-24T14:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                13,
+                1
+            ],
+            "start_time": "2022-05-24T13:00:00",
+            "finish_time": "2022-05-24T14:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                13,
+                2
+            ],
+            "start_time": "2022-05-24T13:00:00",
+            "finish_time": "2022-05-24T14:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                14
+            ],
+            "start_time": "2022-05-24T14:00:00",
+            "finish_time": "2022-05-24T15:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                14,
+                0
+            ],
+            "start_time": "2022-05-24T14:00:00",
+            "finish_time": "2022-05-24T15:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                14,
+                1
+            ],
+            "start_time": "2022-05-24T14:00:00",
+            "finish_time": "2022-05-24T15:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                14,
+                2
+            ],
+            "start_time": "2022-05-24T14:00:00",
+            "finish_time": "2022-05-24T15:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                15
+            ],
+            "start_time": "2022-05-24T15:00:00",
+            "finish_time": "2022-05-24T16:00:00",
+            "total_consumption": 1510.0,
+            "consumptions": [],
+            "cost": 195.18259999999998
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                15,
+                0
+            ],
+            "start_time": "2022-05-24T15:00:00",
+            "finish_time": "2022-05-24T16:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                15,
+                1
+            ],
+            "start_time": "2022-05-24T15:00:00",
+            "finish_time": "2022-05-24T16:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                15,
+                2
+            ],
+            "start_time": "2022-05-24T15:00:00",
+            "finish_time": "2022-05-24T16:00:00",
+            "total_consumption": 1510.0,
+            "consumptions": [],
+            "cost": 195.18259999999998
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                16
+            ],
+            "start_time": "2022-05-24T16:00:00",
+            "finish_time": "2022-05-24T17:00:00",
+            "total_consumption": 15298.0,
+            "consumptions": [],
+            "cost": 991.3104
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                16,
+                0
+            ],
+            "start_time": "2022-05-24T16:00:00",
+            "finish_time": "2022-05-24T17:00:00",
+            "total_consumption": 1456.0,
+            "consumptions": [],
+            "cost": 94.3488
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                16,
+                1
+            ],
+            "start_time": "2022-05-24T16:00:00",
+            "finish_time": "2022-05-24T17:00:00",
+            "total_consumption": 4592.0,
+            "consumptions": [],
+            "cost": 297.5616
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                16,
+                2
+            ],
+            "start_time": "2022-05-24T16:00:00",
+            "finish_time": "2022-05-24T17:00:00",
+            "total_consumption": 9250.0,
+            "consumptions": [],
+            "cost": 599.4
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                17
+            ],
+            "start_time": "2022-05-24T17:00:00",
+            "finish_time": "2022-05-24T18:00:00",
+            "total_consumption": 20452.0,
+            "consumptions": [],
+            "cost": 4011.4552799999997
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                17,
+                0
+            ],
+            "start_time": "2022-05-24T17:00:00",
+            "finish_time": "2022-05-24T18:00:00",
+            "total_consumption": 9604.0,
+            "consumptions": [],
+            "cost": 1883.7285599999998
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                17,
+                1
+            ],
+            "start_time": "2022-05-24T17:00:00",
+            "finish_time": "2022-05-24T18:00:00",
+            "total_consumption": 10848.0,
+            "consumptions": [],
+            "cost": 2127.7267199999997
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                17,
+                2
+            ],
+            "start_time": "2022-05-24T17:00:00",
+            "finish_time": "2022-05-24T18:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                18
+            ],
+            "start_time": "2022-05-24T18:00:00",
+            "finish_time": "2022-05-24T19:00:00",
+            "total_consumption": 20236.0,
+            "consumptions": [],
+            "cost": 7474.773679999999
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                18,
+                0
+            ],
+            "start_time": "2022-05-24T18:00:00",
+            "finish_time": "2022-05-24T19:00:00",
+            "total_consumption": 3450.0,
+            "consumptions": [],
+            "cost": 1274.3609999999999
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                18,
+                1
+            ],
+            "start_time": "2022-05-24T18:00:00",
+            "finish_time": "2022-05-24T19:00:00",
+            "total_consumption": 10556.0,
+            "consumptions": [],
+            "cost": 3899.17528
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                18,
+                2
+            ],
+            "start_time": "2022-05-24T18:00:00",
+            "finish_time": "2022-05-24T19:00:00",
+            "total_consumption": 6230.0,
+            "consumptions": [],
+            "cost": 2301.2374
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                19
+            ],
+            "start_time": "2022-05-24T19:00:00",
+            "finish_time": "2022-05-24T20:00:00",
+            "total_consumption": 15988.0,
+            "consumptions": [],
+            "cost": 6306.4666
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                19,
+                0
+            ],
+            "start_time": "2022-05-24T19:00:00",
+            "finish_time": "2022-05-24T20:00:00",
+            "total_consumption": 7140.0,
+            "consumptions": [],
+            "cost": 2816.3729999999996
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                19,
+                1
+            ],
+            "start_time": "2022-05-24T19:00:00",
+            "finish_time": "2022-05-24T20:00:00",
+            "total_consumption": 2771.0,
+            "consumptions": [],
+            "cost": 1093.0209499999999
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                19,
+                2
+            ],
+            "start_time": "2022-05-24T19:00:00",
+            "finish_time": "2022-05-24T20:00:00",
+            "total_consumption": 6077.0,
+            "consumptions": [],
+            "cost": 2397.0726499999996
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                20
+            ],
+            "start_time": "2022-05-24T20:00:00",
+            "finish_time": "2022-05-24T21:00:00",
+            "total_consumption": 1386.0,
+            "consumptions": [],
+            "cost": 451.94687999999996
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                20,
+                0
+            ],
+            "start_time": "2022-05-24T20:00:00",
+            "finish_time": "2022-05-24T21:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                20,
+                1
+            ],
+            "start_time": "2022-05-24T20:00:00",
+            "finish_time": "2022-05-24T21:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                20,
+                2
+            ],
+            "start_time": "2022-05-24T20:00:00",
+            "finish_time": "2022-05-24T21:00:00",
+            "total_consumption": 1386.0,
+            "consumptions": [],
+            "cost": 451.94687999999996
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                21
+            ],
+            "start_time": "2022-05-24T21:00:00",
+            "finish_time": "2022-05-24T22:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                21,
+                0
+            ],
+            "start_time": "2022-05-24T21:00:00",
+            "finish_time": "2022-05-24T22:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                21,
+                1
+            ],
+            "start_time": "2022-05-24T21:00:00",
+            "finish_time": "2022-05-24T22:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                21,
+                2
+            ],
+            "start_time": "2022-05-24T21:00:00",
+            "finish_time": "2022-05-24T22:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                22
+            ],
+            "start_time": "2022-05-24T22:00:00",
+            "finish_time": "2022-05-24T23:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                22,
+                0
+            ],
+            "start_time": "2022-05-24T22:00:00",
+            "finish_time": "2022-05-24T23:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                22,
+                1
+            ],
+            "start_time": "2022-05-24T22:00:00",
+            "finish_time": "2022-05-24T23:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                22,
+                2
+            ],
+            "start_time": "2022-05-24T22:00:00",
+            "finish_time": "2022-05-24T23:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                23
+            ],
+            "start_time": "2022-05-24T23:00:00",
+            "finish_time": "2022-05-25T00:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                23,
+                0
+            ],
+            "start_time": "2022-05-24T23:00:00",
+            "finish_time": "2022-05-25T00:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                23,
+                1
+            ],
+            "start_time": "2022-05-24T23:00:00",
+            "finish_time": "2022-05-25T00:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                23,
+                2
+            ],
+            "start_time": "2022-05-24T23:00:00",
+            "finish_time": "2022-05-25T00:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                24
+            ],
+            "start_time": "2022-05-25T00:00:00",
+            "finish_time": "2022-05-25T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                24,
+                0
+            ],
+            "start_time": "2022-05-25T00:00:00",
+            "finish_time": "2022-05-25T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                24,
+                1
+            ],
+            "start_time": "2022-05-25T00:00:00",
+            "finish_time": "2022-05-25T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                24,
+                2
+            ],
+            "start_time": "2022-05-25T00:00:00",
+            "finish_time": "2022-05-25T01:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                25
+            ],
+            "start_time": "2022-05-25T01:00:00",
+            "finish_time": "2022-05-25T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                25,
+                0
+            ],
+            "start_time": "2022-05-25T01:00:00",
+            "finish_time": "2022-05-25T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                25,
+                1
+            ],
+            "start_time": "2022-05-25T01:00:00",
+            "finish_time": "2022-05-25T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                25,
+                2
+            ],
+            "start_time": "2022-05-25T01:00:00",
+            "finish_time": "2022-05-25T02:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                26
+            ],
+            "start_time": "2022-05-25T02:00:00",
+            "finish_time": "2022-05-25T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                26,
+                0
+            ],
+            "start_time": "2022-05-25T02:00:00",
+            "finish_time": "2022-05-25T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                26,
+                1
+            ],
+            "start_time": "2022-05-25T02:00:00",
+            "finish_time": "2022-05-25T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                26,
+                2
+            ],
+            "start_time": "2022-05-25T02:00:00",
+            "finish_time": "2022-05-25T03:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                27
+            ],
+            "start_time": "2022-05-25T03:00:00",
+            "finish_time": "2022-05-25T04:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                27,
+                0
+            ],
+            "start_time": "2022-05-25T03:00:00",
+            "finish_time": "2022-05-25T04:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                27,
+                1
+            ],
+            "start_time": "2022-05-25T03:00:00",
+            "finish_time": "2022-05-25T04:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                27,
+                2
+            ],
+            "start_time": "2022-05-25T03:00:00",
+            "finish_time": "2022-05-25T04:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                28
+            ],
+            "start_time": "2022-05-25T04:00:00",
+            "finish_time": "2022-05-25T05:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                28,
+                0
+            ],
+            "start_time": "2022-05-25T04:00:00",
+            "finish_time": "2022-05-25T05:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                28,
+                1
+            ],
+            "start_time": "2022-05-25T04:00:00",
+            "finish_time": "2022-05-25T05:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                28,
+                2
+            ],
+            "start_time": "2022-05-25T04:00:00",
+            "finish_time": "2022-05-25T05:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                29
+            ],
+            "start_time": "2022-05-25T05:00:00",
+            "finish_time": "2022-05-25T06:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                29,
+                0
+            ],
+            "start_time": "2022-05-25T05:00:00",
+            "finish_time": "2022-05-25T06:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                29,
+                1
+            ],
+            "start_time": "2022-05-25T05:00:00",
+            "finish_time": "2022-05-25T06:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                29,
+                2
+            ],
+            "start_time": "2022-05-25T05:00:00",
+            "finish_time": "2022-05-25T06:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                30
+            ],
+            "start_time": "2022-05-25T06:00:00",
+            "finish_time": "2022-05-25T07:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                30,
+                0
+            ],
+            "start_time": "2022-05-25T06:00:00",
+            "finish_time": "2022-05-25T07:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                30,
+                1
+            ],
+            "start_time": "2022-05-25T06:00:00",
+            "finish_time": "2022-05-25T07:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                30,
+                2
+            ],
+            "start_time": "2022-05-25T06:00:00",
+            "finish_time": "2022-05-25T07:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                31
+            ],
+            "start_time": "2022-05-25T07:00:00",
+            "finish_time": "2022-05-25T08:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                31,
+                0
+            ],
+            "start_time": "2022-05-25T07:00:00",
+            "finish_time": "2022-05-25T08:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                31,
+                1
+            ],
+            "start_time": "2022-05-25T07:00:00",
+            "finish_time": "2022-05-25T08:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                31,
+                2
+            ],
+            "start_time": "2022-05-25T07:00:00",
+            "finish_time": "2022-05-25T08:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                32
+            ],
+            "start_time": "2022-05-25T08:00:00",
+            "finish_time": "2022-05-25T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                32,
+                0
+            ],
+            "start_time": "2022-05-25T08:00:00",
+            "finish_time": "2022-05-25T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                32,
+                1
+            ],
+            "start_time": "2022-05-25T08:00:00",
+            "finish_time": "2022-05-25T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                32,
+                2
+            ],
+            "start_time": "2022-05-25T08:00:00",
+            "finish_time": "2022-05-25T09:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                33
+            ],
+            "start_time": "2022-05-25T09:00:00",
+            "finish_time": "2022-05-25T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                33,
+                0
+            ],
+            "start_time": "2022-05-25T09:00:00",
+            "finish_time": "2022-05-25T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                33,
+                1
+            ],
+            "start_time": "2022-05-25T09:00:00",
+            "finish_time": "2022-05-25T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                33,
+                2
+            ],
+            "start_time": "2022-05-25T09:00:00",
+            "finish_time": "2022-05-25T10:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                34
+            ],
+            "start_time": "2022-05-25T10:00:00",
+            "finish_time": "2022-05-25T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                34,
+                0
+            ],
+            "start_time": "2022-05-25T10:00:00",
+            "finish_time": "2022-05-25T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                34,
+                1
+            ],
+            "start_time": "2022-05-25T10:00:00",
+            "finish_time": "2022-05-25T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                34,
+                2
+            ],
+            "start_time": "2022-05-25T10:00:00",
+            "finish_time": "2022-05-25T11:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                35
+            ],
+            "start_time": "2022-05-25T11:00:00",
+            "finish_time": "2022-05-25T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                35,
+                0
+            ],
+            "start_time": "2022-05-25T11:00:00",
+            "finish_time": "2022-05-25T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                35,
+                1
+            ],
+            "start_time": "2022-05-25T11:00:00",
+            "finish_time": "2022-05-25T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                35,
+                2
+            ],
+            "start_time": "2022-05-25T11:00:00",
+            "finish_time": "2022-05-25T12:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "COST_STATS",
+            "id": [
+                0,
+                1,
+                36
+            ],
+            "start_time": "2022-05-25T12:00:00",
+            "finish_time": "2022-05-25T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                36,
+                0
+            ],
+            "start_time": "2022-05-25T12:00:00",
+            "finish_time": "2022-05-25T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                36,
+                1
+            ],
+            "start_time": "2022-05-25T12:00:00",
+            "finish_time": "2022-05-25T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        },
+        {
+            "type": "MACHINE_STATS",
+            "id": [
+                0,
+                1,
+                36,
+                2
+            ],
+            "start_time": "2022-05-25T12:00:00",
+            "finish_time": "2022-05-25T13:00:00",
+            "total_consumption": 0.0,
+            "consumptions": [],
+            "cost": 0.0
+        }
+    ]
+}

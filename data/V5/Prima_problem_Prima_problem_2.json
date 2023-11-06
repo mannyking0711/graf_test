@@ -1,0 +1,1735 @@
+{
+   "parameters": {
+      "id": "1",
+      "scenario": "scenario1",
+      "generated_datetime": "2023-10-16T17:53:25.551409",
+      "energy_measurement_unit": "kWh",
+      "resources": {
+         "Electricity": {
+            "name": "Electricity",
+            "measurement_unit": "KWh",
+            "measurement_type": "CONTINUES"
+         }
+      },
+      "time_granularity_in_minutes": 1,
+      "weight_vector": [
+         10,
+         1,
+         1000,
+         10,
+         1
+      ],
+      "solver": "CPSolver",
+      "max_solution_time_in_secs": 60
+   },
+   "problem": {
+      "start_time": "2023-04-03T06:00:00",
+      "finish_time": "2023-04-04T22:00:00",
+      "task_attributes": {
+         "0": {
+            "attribute_id": 0,
+            "description": "Product_0",
+            "state": {
+               "Product": 0,
+               "Laser": "IR"
+            }
+         },
+         "1": {
+            "attribute_id": 1,
+            "description": "Product_1",
+            "state": {
+               "Product": 1,
+               "Laser": "IR"
+            }
+         },
+         "2": {
+            "attribute_id": 2,
+            "description": "Product_2",
+            "state": {
+               "Product": 2,
+               "Laser": "Blue"
+            }
+         }
+      },
+      "jobs": {
+         "0": {
+            "id": 0,
+            "product_name": "Camshaft Hardening",
+            "tasks": {
+               "0": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        24.0,
+                        50.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "1": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        24.0,
+                        50.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "2": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        24.0,
+                        50.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "3": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        24.0,
+                        50.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "4": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        24.0,
+                        50.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2023-04-03T11:00:00",
+            "latest_finish_time": "2023-04-03T16:00:00",
+            "product_limits": [
+               [
+                  0,
+                  50.0,
+                  50.0
+               ]
+            ]
+         },
+         "1": {
+            "id": 1,
+            "product_name": "Battery Cell welding (Copper)",
+            "tasks": {
+               "0": {
+                  "name": "Battery Cell welding (Copper)",
+                  "attribute_id": 2,
+                  "out_products": [
+                     [
+                        2,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        2,
+                        399.0,
+                        800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "1": {
+                  "name": "Battery Cell welding (Copper)",
+                  "attribute_id": 2,
+                  "out_products": [
+                     [
+                        2,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        2,
+                        399.0,
+                        800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "2": {
+                  "name": "Battery Cell welding (Copper)",
+                  "attribute_id": 2,
+                  "out_products": [
+                     [
+                        2,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        2,
+                        399.0,
+                        800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "3": {
+                  "name": "Battery Cell welding (Copper)",
+                  "attribute_id": 2,
+                  "out_products": [
+                     [
+                        2,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        2,
+                        399.0,
+                        800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "4": {
+                  "name": "Battery Cell welding (Copper)",
+                  "attribute_id": 2,
+                  "out_products": [
+                     [
+                        2,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        2,
+                        399.0,
+                        800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2023-04-03T06:00:00",
+            "latest_finish_time": "2023-04-04T22:00:00",
+            "product_limits": [
+               [
+                  2,
+                  800.0,
+                  800.0
+               ]
+            ]
+         },
+         "2": {
+            "id": 2,
+            "product_name": "Battery Cell welding (Alum)",
+            "tasks": {
+               "0": {
+                  "name": "Battery Cell welding (Alum)",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        899.0,
+                        1800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "1": {
+                  "name": "Battery Cell welding (Alum)",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        899.0,
+                        1800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "2": {
+                  "name": "Battery Cell welding (Alum)",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        899.0,
+                        1800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "3": {
+                  "name": "Battery Cell welding (Alum)",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        899.0,
+                        1800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "4": {
+                  "name": "Battery Cell welding (Alum)",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        899.0,
+                        1800.0
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2023-04-03T06:00:00",
+            "latest_finish_time": "2023-04-04T22:00:00",
+            "product_limits": [
+               [
+                  1,
+                  1800.0,
+                  1800.0
+               ]
+            ]
+         }
+      },
+      "factories": {
+         "0": {
+            "id": 0,
+            "name": "Factory0",
+            "energy_source_names": [
+               "Market 0"
+            ],
+            "machines": {
+               "0": {
+                  "id": 0,
+                  "name": "Prima_0",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     1,
+                     2
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 1,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "Laser:IR",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           }
+                        ]
+                     },
+                     "1": {
+                        "id": 1,
+                        "description": "Laser:Blue",
+                        "task_operation": [
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1,
+                  "stage": "NO_STAGE"
+               },
+               "1": {
+                  "id": 1,
+                  "name": "Prima_1",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     1,
+                     2
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 1,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "Laser:IR",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 66,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.5425000000000001
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.3333333333333333,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 900,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.2266111111111111
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           }
+                        ]
+                     },
+                     "1": {
+                        "id": 1,
+                        "description": "Laser:Blue",
+                        "task_operation": [
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 400,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.20494444444444443
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    2,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1,
+                  "stage": "NO_STAGE"
+               }
+            },
+            "cost_components": {
+               "Electricity": {
+                  "name": "Electricity Cost",
+                  "resource_name": "Electricity",
+                  "cost_intervals": [
+                     {
+                        "from_datetime": "2023-04-03T06:00:00",
+                        "to_datetime": "2023-04-03T07:00:00",
+                        "cost": 0.18518
+                     },
+                     {
+                        "from_datetime": "2023-04-03T07:00:00",
+                        "to_datetime": "2023-04-03T08:00:00",
+                        "cost": 0.35728
+                     },
+                     {
+                        "from_datetime": "2023-04-03T08:00:00",
+                        "to_datetime": "2023-04-03T09:00:00",
+                        "cost": 0.10995999999999999
+                     },
+                     {
+                        "from_datetime": "2023-04-03T09:00:00",
+                        "to_datetime": "2023-04-03T10:00:00",
+                        "cost": 0.33599
+                     },
+                     {
+                        "from_datetime": "2023-04-03T10:00:00",
+                        "to_datetime": "2023-04-03T11:00:00",
+                        "cost": 0.29804
+                     },
+                     {
+                        "from_datetime": "2023-04-03T11:00:00",
+                        "to_datetime": "2023-04-03T12:00:00",
+                        "cost": 0.13275
+                     },
+                     {
+                        "from_datetime": "2023-04-03T12:00:00",
+                        "to_datetime": "2023-04-03T13:00:00",
+                        "cost": 0.31855
+                     },
+                     {
+                        "from_datetime": "2023-04-03T13:00:00",
+                        "to_datetime": "2023-04-03T14:00:00",
+                        "cost": 0.33648
+                     },
+                     {
+                        "from_datetime": "2023-04-03T14:00:00",
+                        "to_datetime": "2023-04-03T15:00:00",
+                        "cost": 0.35134
+                     },
+                     {
+                        "from_datetime": "2023-04-03T15:00:00",
+                        "to_datetime": "2023-04-03T16:00:00",
+                        "cost": 0.30252999999999997
+                     },
+                     {
+                        "from_datetime": "2023-04-03T16:00:00",
+                        "to_datetime": "2023-04-03T17:00:00",
+                        "cost": 0.33932
+                     },
+                     {
+                        "from_datetime": "2023-04-03T17:00:00",
+                        "to_datetime": "2023-04-03T18:00:00",
+                        "cost": 0.14980000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-03T18:00:00",
+                        "to_datetime": "2023-04-03T19:00:00",
+                        "cost": 0.22993
+                     },
+                     {
+                        "from_datetime": "2023-04-03T19:00:00",
+                        "to_datetime": "2023-04-03T20:00:00",
+                        "cost": 0.20368
+                     },
+                     {
+                        "from_datetime": "2023-04-03T20:00:00",
+                        "to_datetime": "2023-04-03T21:00:00",
+                        "cost": 0.14635
+                     },
+                     {
+                        "from_datetime": "2023-04-03T21:00:00",
+                        "to_datetime": "2023-04-03T22:00:00",
+                        "cost": 0.31667
+                     },
+                     {
+                        "from_datetime": "2023-04-03T22:00:00",
+                        "to_datetime": "2023-04-03T23:00:00",
+                        "cost": 0.31055
+                     },
+                     {
+                        "from_datetime": "2023-04-03T23:00:00",
+                        "to_datetime": "2023-04-04T00:00:00",
+                        "cost": 0.33615
+                     },
+                     {
+                        "from_datetime": "2023-04-04T00:00:00",
+                        "to_datetime": "2023-04-04T01:00:00",
+                        "cost": 0.35026999999999997
+                     },
+                     {
+                        "from_datetime": "2023-04-04T01:00:00",
+                        "to_datetime": "2023-04-04T02:00:00",
+                        "cost": 0.119
+                     },
+                     {
+                        "from_datetime": "2023-04-04T02:00:00",
+                        "to_datetime": "2023-04-04T03:00:00",
+                        "cost": 0.29732
+                     },
+                     {
+                        "from_datetime": "2023-04-04T03:00:00",
+                        "to_datetime": "2023-04-04T04:00:00",
+                        "cost": 0.35899000000000003
+                     },
+                     {
+                        "from_datetime": "2023-04-04T04:00:00",
+                        "to_datetime": "2023-04-04T05:00:00",
+                        "cost": 0.32582
+                     },
+                     {
+                        "from_datetime": "2023-04-04T05:00:00",
+                        "to_datetime": "2023-04-04T06:00:00",
+                        "cost": 0.23051
+                     },
+                     {
+                        "from_datetime": "2023-04-04T06:00:00",
+                        "to_datetime": "2023-04-04T07:00:00",
+                        "cost": 0.20112
+                     },
+                     {
+                        "from_datetime": "2023-04-04T07:00:00",
+                        "to_datetime": "2023-04-04T08:00:00",
+                        "cost": 0.14314
+                     },
+                     {
+                        "from_datetime": "2023-04-04T08:00:00",
+                        "to_datetime": "2023-04-04T09:00:00",
+                        "cost": 0.33812000000000003
+                     },
+                     {
+                        "from_datetime": "2023-04-04T09:00:00",
+                        "to_datetime": "2023-04-04T10:00:00",
+                        "cost": 0.33929000000000004
+                     },
+                     {
+                        "from_datetime": "2023-04-04T10:00:00",
+                        "to_datetime": "2023-04-04T11:00:00",
+                        "cost": 0.28445
+                     },
+                     {
+                        "from_datetime": "2023-04-04T11:00:00",
+                        "to_datetime": "2023-04-04T12:00:00",
+                        "cost": 0.17064
+                     },
+                     {
+                        "from_datetime": "2023-04-04T12:00:00",
+                        "to_datetime": "2023-04-04T13:00:00",
+                        "cost": 0.25307
+                     },
+                     {
+                        "from_datetime": "2023-04-04T13:00:00",
+                        "to_datetime": "2023-04-04T14:00:00",
+                        "cost": 0.31282
+                     },
+                     {
+                        "from_datetime": "2023-04-04T14:00:00",
+                        "to_datetime": "2023-04-04T15:00:00",
+                        "cost": 0.24617
+                     },
+                     {
+                        "from_datetime": "2023-04-04T15:00:00",
+                        "to_datetime": "2023-04-04T16:00:00",
+                        "cost": 0.36229
+                     },
+                     {
+                        "from_datetime": "2023-04-04T16:00:00",
+                        "to_datetime": "2023-04-04T17:00:00",
+                        "cost": 0.14711000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-04T17:00:00",
+                        "to_datetime": "2023-04-04T18:00:00",
+                        "cost": 0.1477
+                     },
+                     {
+                        "from_datetime": "2023-04-04T18:00:00",
+                        "to_datetime": "2023-04-04T19:00:00",
+                        "cost": 0.21336000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-04T19:00:00",
+                        "to_datetime": "2023-04-04T20:00:00",
+                        "cost": 0.13969
+                     },
+                     {
+                        "from_datetime": "2023-04-04T20:00:00",
+                        "to_datetime": "2023-04-04T21:00:00",
+                        "cost": 0.36428
+                     },
+                     {
+                        "from_datetime": "2023-04-04T21:00:00",
+                        "to_datetime": "2023-04-04T22:00:00",
+                        "cost": 0.3338
+                     },
+                     {
+                        "from_datetime": "2023-04-04T22:00:00",
+                        "to_datetime": "2023-04-04T23:00:00",
+                        "cost": 0.2785
+                     }
+                  ]
+               }
+            },
+            "storages": {
+               "0": {
+                  "id": 0,
+                  "name": "storage0",
+                  "capacity": 24.0,
+                  "min_value": 6.0,
+                  "max_value": 81.0,
+                  "eligible_products": []
+               },
+               "1": {
+                  "id": 1,
+                  "name": "storage1",
+                  "capacity": 31.0,
+                  "min_value": 12.0,
+                  "max_value": 84.0,
+                  "eligible_products": []
+               }
+            }
+         }
+      },
+      "out_products": {
+         "0": {
+            "id": 0,
+            "name": "Camshaft Hardening"
+         },
+         "1": {
+            "id": 1,
+            "name": "Battery Cell welding (Alum)"
+         },
+         "2": {
+            "id": 2,
+            "name": "Battery Cell welding (Copper)"
+         }
+      },
+      "productSequences": {}
+   },
+   "energy_sources": {
+      "Market 0": {
+         "name": "Market 0",
+         "resource_name": "Electricity",
+         "cost_intervals": [
+            {
+               "from_datetime": "2023-04-03T06:00:00",
+               "to_datetime": "2023-04-03T07:00:00",
+               "cost": 185.18
+            },
+            {
+               "from_datetime": "2023-04-03T07:00:00",
+               "to_datetime": "2023-04-03T08:00:00",
+               "cost": 357.28
+            },
+            {
+               "from_datetime": "2023-04-03T08:00:00",
+               "to_datetime": "2023-04-03T09:00:00",
+               "cost": 109.96
+            },
+            {
+               "from_datetime": "2023-04-03T09:00:00",
+               "to_datetime": "2023-04-03T10:00:00",
+               "cost": 335.99
+            },
+            {
+               "from_datetime": "2023-04-03T10:00:00",
+               "to_datetime": "2023-04-03T11:00:00",
+               "cost": 298.04
+            },
+            {
+               "from_datetime": "2023-04-03T11:00:00",
+               "to_datetime": "2023-04-03T12:00:00",
+               "cost": 132.75
+            },
+            {
+               "from_datetime": "2023-04-03T12:00:00",
+               "to_datetime": "2023-04-03T13:00:00",
+               "cost": 318.55
+            },
+            {
+               "from_datetime": "2023-04-03T13:00:00",
+               "to_datetime": "2023-04-03T14:00:00",
+               "cost": 336.48
+            },
+            {
+               "from_datetime": "2023-04-03T14:00:00",
+               "to_datetime": "2023-04-03T15:00:00",
+               "cost": 351.34
+            },
+            {
+               "from_datetime": "2023-04-03T15:00:00",
+               "to_datetime": "2023-04-03T16:00:00",
+               "cost": 302.53
+            },
+            {
+               "from_datetime": "2023-04-03T16:00:00",
+               "to_datetime": "2023-04-03T17:00:00",
+               "cost": 339.32
+            },
+            {
+               "from_datetime": "2023-04-03T17:00:00",
+               "to_datetime": "2023-04-03T18:00:00",
+               "cost": 149.8
+            },
+            {
+               "from_datetime": "2023-04-03T18:00:00",
+               "to_datetime": "2023-04-03T19:00:00",
+               "cost": 229.93
+            },
+            {
+               "from_datetime": "2023-04-03T19:00:00",
+               "to_datetime": "2023-04-03T20:00:00",
+               "cost": 203.68
+            },
+            {
+               "from_datetime": "2023-04-03T20:00:00",
+               "to_datetime": "2023-04-03T21:00:00",
+               "cost": 146.35
+            },
+            {
+               "from_datetime": "2023-04-03T21:00:00",
+               "to_datetime": "2023-04-03T22:00:00",
+               "cost": 316.67
+            },
+            {
+               "from_datetime": "2023-04-03T22:00:00",
+               "to_datetime": "2023-04-03T23:00:00",
+               "cost": 310.55
+            },
+            {
+               "from_datetime": "2023-04-03T23:00:00",
+               "to_datetime": "2023-04-04T00:00:00",
+               "cost": 336.15
+            },
+            {
+               "from_datetime": "2023-04-04T00:00:00",
+               "to_datetime": "2023-04-04T01:00:00",
+               "cost": 350.27
+            },
+            {
+               "from_datetime": "2023-04-04T01:00:00",
+               "to_datetime": "2023-04-04T02:00:00",
+               "cost": 119.0
+            },
+            {
+               "from_datetime": "2023-04-04T02:00:00",
+               "to_datetime": "2023-04-04T03:00:00",
+               "cost": 297.32
+            },
+            {
+               "from_datetime": "2023-04-04T03:00:00",
+               "to_datetime": "2023-04-04T04:00:00",
+               "cost": 358.99
+            },
+            {
+               "from_datetime": "2023-04-04T04:00:00",
+               "to_datetime": "2023-04-04T05:00:00",
+               "cost": 325.82
+            },
+            {
+               "from_datetime": "2023-04-04T05:00:00",
+               "to_datetime": "2023-04-04T06:00:00",
+               "cost": 230.51
+            },
+            {
+               "from_datetime": "2023-04-04T06:00:00",
+               "to_datetime": "2023-04-04T07:00:00",
+               "cost": 201.12
+            },
+            {
+               "from_datetime": "2023-04-04T07:00:00",
+               "to_datetime": "2023-04-04T08:00:00",
+               "cost": 143.14
+            },
+            {
+               "from_datetime": "2023-04-04T08:00:00",
+               "to_datetime": "2023-04-04T09:00:00",
+               "cost": 338.12
+            },
+            {
+               "from_datetime": "2023-04-04T09:00:00",
+               "to_datetime": "2023-04-04T10:00:00",
+               "cost": 339.29
+            },
+            {
+               "from_datetime": "2023-04-04T10:00:00",
+               "to_datetime": "2023-04-04T11:00:00",
+               "cost": 284.45
+            },
+            {
+               "from_datetime": "2023-04-04T11:00:00",
+               "to_datetime": "2023-04-04T12:00:00",
+               "cost": 170.64
+            },
+            {
+               "from_datetime": "2023-04-04T12:00:00",
+               "to_datetime": "2023-04-04T13:00:00",
+               "cost": 253.07
+            },
+            {
+               "from_datetime": "2023-04-04T13:00:00",
+               "to_datetime": "2023-04-04T14:00:00",
+               "cost": 312.82
+            },
+            {
+               "from_datetime": "2023-04-04T14:00:00",
+               "to_datetime": "2023-04-04T15:00:00",
+               "cost": 246.17
+            },
+            {
+               "from_datetime": "2023-04-04T15:00:00",
+               "to_datetime": "2023-04-04T16:00:00",
+               "cost": 362.29
+            },
+            {
+               "from_datetime": "2023-04-04T16:00:00",
+               "to_datetime": "2023-04-04T17:00:00",
+               "cost": 147.11
+            },
+            {
+               "from_datetime": "2023-04-04T17:00:00",
+               "to_datetime": "2023-04-04T18:00:00",
+               "cost": 147.7
+            },
+            {
+               "from_datetime": "2023-04-04T18:00:00",
+               "to_datetime": "2023-04-04T19:00:00",
+               "cost": 213.36
+            },
+            {
+               "from_datetime": "2023-04-04T19:00:00",
+               "to_datetime": "2023-04-04T20:00:00",
+               "cost": 139.69
+            },
+            {
+               "from_datetime": "2023-04-04T20:00:00",
+               "to_datetime": "2023-04-04T21:00:00",
+               "cost": 364.28
+            },
+            {
+               "from_datetime": "2023-04-04T21:00:00",
+               "to_datetime": "2023-04-04T22:00:00",
+               "cost": 333.8
+            },
+            {
+               "from_datetime": "2023-04-04T22:00:00",
+               "to_datetime": "2023-04-04T23:00:00",
+               "cost": 278.5
+            }
+         ],
+         "consumption_multiplier": 1000.0
+      }
+   },
+   "initial_solution": null
+}

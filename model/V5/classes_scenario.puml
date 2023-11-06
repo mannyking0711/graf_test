@@ -1,0 +1,343 @@
+@startuml classes_scenario
+set namespaceSeparator none
+class "AbstractOperation" as model.V5.scenario.AbstractOperation {
+  BOM : Optional[List[Tuple[int, float]]]
+  attribute_id : int
+  in_products : Optional[List[Tuple[int, float]]]
+  is_optional : Optional[bool]
+  name : Optional[str]
+  out_products : Optional[List[Tuple[int, float]]]
+}
+class "Attribute" as model.V5.scenario.Attribute {
+  attribute_id : int
+  description : Optional[str]
+  state : Optional[Dict[str, float]]
+}
+class "CostComponent" as model.V5.scenario.CostComponent {
+  cost_periods : List[CostPeriod]
+  name : str
+  add_cost_period(cost_period: CostPeriod)
+  fix_after_load_from_json(base: datetime)
+  get_charge_per_minute()
+  setup_cost_per_minute()
+}
+class "CostPeriod" as model.V5.scenario.CostPeriod {
+  cost : float
+  from_datetime : datetime
+  to_datetime : datetime
+  datetime_int(base: datetime)
+}
+class "DependencyItem" as model.V5.scenario.DependencyItem {
+  consumptions : Optional[List[ResourceUse]]
+  max_time : int
+  min_time : int
+  task_id1 : int
+  task_id2 : int
+}
+class "EnergySource" as model.V5.scenario.EnergySource {
+  charge_intervals : List[EnergySourceInterval]
+  name : str
+  setup_time : Optional[conint(ge=0.0)]
+  shutdown_time : Optional[conint(ge=0.0)]
+  add_charge_interval(charge_interval: EnergySourceInterval)
+  fix_after_load_from_json(base: datetime)
+  get_charge_per_minute()
+  setup_charge_per_minute()
+}
+class "EnergySourceInterval" as model.V5.scenario.EnergySourceInterval {
+  cost : float
+  from_datetime : datetime
+  max_energy : Optional[float]
+  min_energy : Optional[confloat(ge=0.0)]
+  to_datetime : datetime
+  datetime_int(base: datetime)
+}
+class "Factory" as model.V5.scenario.Factory {
+  energy_source_names : List[str]
+  id : int
+  m2m_transportation : Optional[List[InternalTransferItem]]
+  machines : Dict[int, Machine]
+  name : str
+  operators : Optional[Dict[int, Operator]]
+  add_machine(machine: Machine)
+  eligible_machines_for_task(job_id: int, task_id: int) -> list[Machine]
+  fix_after_load_from_json(base: datetime, energy_sources: Dict[str, EnergySource])
+  get_charge_per_minute()
+  get_cost_for_task_machine_at_time(task: Task, machine_id: int, op_mode: int, time: int)
+  get_eligible_op_modes(machine_id: int, job_id: int, task_id: int)
+  get_machines()
+  setup_time_consumption(machine_id: int, attr1: int, attr2: int)
+  tasks_that_can_be_executed_at_machine(machine_id: int)
+}
+class "FixedTimeTaskResourceUseProperties" as model.V5.scenario.FixedTimeTaskResourceUseProperties {
+  consumptions : List[ResourceUse]
+  time : int
+  get_maximum_time()
+  get_minimum_time()
+}
+class "InternalTransferItem" as model.V5.scenario.InternalTransferItem {
+  base_volume : Optional[int]
+  consumptions : List[ResourceUse]
+  machine_id1 : int
+  machine_id2 : int
+  time : int
+}
+class "IntraFactoryTransferItem" as model.V5.scenario.IntraFactoryTransferItem {
+  base_volume : Optional[int]
+  consumptions : List[ResourceUse]
+  factory_id1 : int
+  factory_id2 : int
+  time : int
+}
+class "Job" as model.V5.scenario.Job {
+  earliest_start_time : datetime
+  id : int
+  latest_finish_time : Optional[datetime]
+  name : Optional[str]
+  no_penalty_finish_time : Optional[datetime]
+  process_id : Optional[int]
+  product_name : Optional[str]
+  task_dependencies : Optional[List[DependencyItem]]
+  tasks : Optional[Dict[int, Task]]
+  create_ru(problem: Problem)
+  datetime_int(base: datetime)
+  fix_after_load_from_json(base: datetime, problem: Problem)
+  get_Tasks()
+  update_task_est_lft(problem: Problem)
+}
+class "Machine" as model.V5.scenario.Machine {
+  can_process : Optional[List[int]]
+  capacity : Optional[conint(ge=1)]
+  id : int
+  idle_consumptions : Optional[List[ResourceUse]]
+  name : str
+  operational_modes : Dict[int, MachineOperationalMode]
+  setup : Optional[List[SetupProperties]]
+  unavailable : Optional[List[UnavailablePeriod]]
+  unavailable : list
+  add_machine_setup(setup: SetupProperties)
+  add_machine_unavailability(ump: UnavailablePeriod)
+  add_machine_use(usage: FixedTimeTaskResourceUseProperties, op_mode: int)
+  eligible_for_task(job_id, task_id)
+  fix_after_load_from_json(base: datetime)
+  setup_time_consumption_from_attr1_to_attr2(attr1, attr2)
+}
+class "MachineOperationalMode" as model.V5.scenario.MachineOperationalMode {
+  description : Optional[str]
+  id : int
+  task_operation : Optional[List[Union[FixedTimeTaskResourceUseProperties, VariableTimeTaskResourceUseProperties]]]
+  add(to: TaskResourceUseProperties)
+  fix_after_load_from_json(base: datetime)
+  get_resource_use(job_id: int, task_id: int)
+}
+class "Operator" as model.V5.scenario.Operator {
+  id : int
+  machines : List[int]
+  name : str
+  unavailable : Optional[List[UnavailablePeriod]]
+  fix_after_load_from_json(base: datetime)
+}
+class "Parameters" as model.V5.scenario.Parameters {
+  energy_measurement_unit : str
+  generated_datetime : Optional[datetime]
+  id : str
+  max_solution_time_in_secs : Optional[conint(ge=20.0)]
+  scenario : str
+  solver : Optional[str]
+  time_granularity_in_minutes
+  weight_vector : Optional[List[WeightVectorItem]]
+}
+class "Problem" as model.V5.scenario.Problem {
+  factories : Dict[int, Factory]
+  finish_time : datetime
+  in_products : Optional[Dict[int, Product]]
+  jobs : Dict[int, Job]
+  out_products : Optional[Dict[int, Product]]
+  productSequences : Optional[Dict[int, ProductSequence]]
+  start_time : datetime
+  task_attributes : Dict[int, Attribute]
+  add_factory(factory: Factory)
+  add_job(job: Job)
+  datetime_int()
+  eligible_machines_for_task(job_id: int, task_id: int) -> List[int, int]
+  fix_after_load_from_json(energy_sources: Dict[str, EnergySource])
+  get_charge_per_minute(factory_id: int)
+  get_cost_for_job_task_machine_at_time(job_id, task_id, machine_id, time, factory_id)
+  job_tasks_that_can_be_executed_at_machine(machine_id: int, factory_id: int)
+  setup_charge_per_minute()
+  setup_time_consumption(machine_id, previous_job_id, previous_task_id, current_job_id, current_task_id, factory_id: int)
+}
+class "Process" as model.V5.scenario.Process {
+  id : int
+  task_dependencies : Optional[List[DependencyItem]]
+  tasks : Dict[int, AbstractOperation]
+  fix_after_load_from_json(base: datetime, problem: Problem)
+}
+class "Product" as model.V5.scenario.Product {
+  id : int
+  name : str
+  volume : Optional[confloat(ge=0.0)]
+  weight : Optional[confloat(ge=0.0)]
+}
+class "ProductSequence" as model.V5.scenario.ProductSequence {
+  job_ids : List[int]
+  product_id : int
+  fix_after_load_from_json(problem: Problem)
+}
+class "Resource" as model.V5.scenario.Resource {
+  measurement_type
+  measurement_unit : str
+  name : str
+}
+class "ResourceType" as model.V5.scenario.ResourceType {
+  name
+}
+class "ResourceUse" as model.V5.scenario.ResourceUse {
+  consumption : Union[int, float]
+  resource_name : str
+}
+class "Scenario" as model.V5.scenario.Scenario {
+  energy_sources : Dict[str, EnergySource]
+  initial_solution : Optional[Solution]
+  parameters
+  problem
+  fix_after_load_from_json()
+}
+class "ScheduleItem" as model.V5.scenario.ScheduleItem {
+  consumption : float
+  cost : float
+  factory_id : int
+  finish_time : datetime
+  job_id : int
+  machine_id : int
+  machine_mode : int
+  start_time : datetime
+  task_id : int
+}
+class "SetupProperties" as model.V5.scenario.SetupProperties {
+  consumptions : List[ResourceUse]
+  task_attribute1 : int
+  task_attribute2 : int
+  time : int
+}
+class "Solution" as model.V5.scenario.Solution {
+  generated_date : datetime
+  id : int
+  problem_id : str
+  schedule : List[ScheduleItem]
+  cost()
+  finish_time()
+  fix_after_load_from_json(problem: Problem)
+  get_consumption()
+  horizon_finish()
+  schedule_task_to_machine(job_id: int, task_id: int, machine_mode: int, machine_id: int, factory_id: int, start_time: int, duration: int, cost: float, total_consumption: float)
+  start_time()
+  validate_solution()
+}
+class "Storage" as model.V5.scenario.Storage {
+  capacity
+  id : str
+  max_value
+  min_value
+  name : str
+  resource_name : str
+}
+class "Task" as model.V5.scenario.Task {
+  earliest_start_time : Optional[datetime]
+  id : int
+  job_id : int
+  latest_finish_time : Optional[datetime]
+  datetime_int(base: datetime)
+  get_earliest_start_time() -> int
+  get_latest_finish_time() -> int
+  get_max_duration() -> int
+  get_min_duration() -> int
+}
+class "TaskGraph" as model.V5.scenario.TaskGraph {
+  graph : DiGraph
+  job
+  name : str
+  start_task
+  sync_task
+  addDependency(task1: Task, task2: Task)
+  addTask(task: Task)
+  get_dependency(s_id: int, e_id: int)
+  get_descendant_tasks(t_id: int)
+  get_next_tasks(t_id: int)
+  get_prev_tasks(t_id: int)
+  get_tasks()
+}
+class "TaskResourceUseProperties" as model.V5.scenario.TaskResourceUseProperties {
+  job_id : int
+  operators : Optional[int]
+  task_id : int
+  get_maximum_time()
+  get_minimum_time()
+}
+class "UnavailablePeriod" as model.V5.scenario.UnavailablePeriod {
+  description : Optional[str]
+  from_datetime : datetime
+  to_datetime : datetime
+  datetime_int(base: datetime)
+}
+class "VariableTimeTaskResourceUseProperties" as model.V5.scenario.VariableTimeTaskResourceUseProperties {
+  consumptions_per_min : List[ResourceUse]
+  max_time : Optional[conint(ge=0)]
+  min_time : Optional[conint(ge=0)]
+  get_maximum_time()
+  get_minimum_time()
+}
+class "WeightVectorItem" as model.V5.scenario.WeightVectorItem {
+}
+model.V5.scenario.AbstractOperation --> model.V5.scenario.Attribute : attribute
+model.V5.scenario.AbstractOperation *--> model.V5.scenario.Product : in_products
+model.V5.scenario.AbstractOperation *--> model.V5.scenario.Product : out_products
+model.V5.scenario.AbstractOperation *--> model.V5.scenario.Resource : BOM
+model.V5.scenario.FixedTimeTaskResourceUseProperties --|> model.V5.scenario.TaskResourceUseProperties
+model.V5.scenario.Task --|> model.V5.scenario.AbstractOperation
+model.V5.scenario.VariableTimeTaskResourceUseProperties --|> model.V5.scenario.TaskResourceUseProperties
+model.V5.scenario.Job --* model.V5.scenario.TaskGraph : job
+model.V5.scenario.Parameters --* model.V5.scenario.Scenario : parameters
+model.V5.scenario.Problem --* model.V5.scenario.Scenario : problem
+model.V5.scenario.Problem -- model.V5.scenario.Solution : _problem
+model.V5.scenario.Process --* model.V5.scenario.Job : _process
+model.V5.scenario.Product --* model.V5.scenario.ProductSequence : _product
+model.V5.scenario.ResourceType --* model.V5.scenario.Resource : measurement_type
+model.V5.scenario.Task --* model.V5.scenario.TaskGraph : start_task
+model.V5.scenario.Task --* model.V5.scenario.TaskGraph : sync_task
+model.V5.scenario.Task <-- model.V5.scenario.DependencyItem : task_id1
+model.V5.scenario.Task <-- model.V5.scenario.DependencyItem : task_id1
+model.V5.scenario.TaskGraph --* model.V5.scenario.Job : _graph
+model.V5.scenario.TaskGraph --* model.V5.scenario.Job : _graph
+model.V5.scenario.TaskGraph --* model.V5.scenario.Process : _graph
+model.V5.scenario.TaskGraph --* model.V5.scenario.Process : _graph
+model.V5.scenario.Scenario *-- model.V5.scenario.EnergySource : energy_sources
+model.V5.scenario.Scenario -- model.V5.scenario.Solution: initial_solution
+model.V5.scenario.Scenario *-- model.V5.scenario.Solution : solutions
+model.V5.scenario.Solution *-- model.V5.scenario.ScheduleItem : schedule
+model.V5.scenario.Parameters *-- model.V5.scenario.WeightVectorItem : weight_vector
+model.V5.scenario.EnergySource *-- model.V5.scenario.EnergySourceInterval : charge_intervals
+model.V5.scenario.Problem *-- model.V5.scenario.Factory : factories
+model.V5.scenario.Problem *-- model.V5.scenario.Attribute : attributes
+model.V5.scenario.Problem *-- model.V5.scenario.Job : jobs
+model.V5.scenario.Factory *-- model.V5.scenario.Machine : machines
+model.V5.scenario.Factory *-- model.V5.scenario.Operator : operators
+model.V5.scenario.Machine *-- model.V5.scenario.UnavailablePeriod : unavailable
+model.V5.scenario.Machine *-- model.V5.scenario.SetupProperties : setup
+model.V5.scenario.Machine *-- model.V5.scenario.MachineOperationalMode : operational_modes
+model.V5.scenario.MachineOperationalMode *-- model.V5.scenario.TaskResourceUseProperties : task_operation
+model.V5.scenario.Operator *-- model.V5.scenario.UnavailablePeriod : unavailable
+model.V5.scenario.Operator *--> model.V5.scenario.Machine : machines
+model.V5.scenario.InternalTransferItem --> model.V5.scenario.Machine : machine1
+model.V5.scenario.InternalTransferItem --> model.V5.scenario.Machine : machine2
+model.V5.scenario.InternalTransferItem *-- model.V5.scenario.ResourceUse : consumptions
+model.V5.scenario.Job *-- model.V5.scenario.Task : tasks
+model.V5.scenario.Job *-- model.V5.scenario.DependencyItem : task_dependencies
+model.V5.scenario.Job -- model.V5.scenario.Product : product
+model.V5.scenario.FixedTimeTaskResourceUseProperties *-- model.V5.scenario.ResourceUse : consumptions
+model.V5.scenario.VariableTimeTaskResourceUseProperties *-- model.V5.scenario.ResourceUse : consumptions_per_min
+model.V5.scenario.Problem *-- model.V5.scenario.IntraFactoryTransferItem : intra_factory_transfers
+model.V5.scenario.Factory *-- model.V5.scenario.InternalTransferItem : m2m_transportation
+model.V5.scenario.ResourceUse -- model.V5.scenario.Resource : resource_name
+model.V5.scenario.Factory *-- model.V5.scenario.EnergySource : energy_source_names
+@enduml

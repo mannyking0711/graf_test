@@ -1,0 +1,1570 @@
+{
+    "id": "1",
+    "problem_id": "1",
+    "generated_date": "2023-05-11T23:28:16.161142",
+    "schedule": [
+        {
+            "job_id": 0,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-26T22:00:00",
+            "finish_time": "2023-03-27T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 67.2
+        },
+        {
+            "job_id": 0,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:00:00",
+            "finish_time": "2023-03-27T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.85
+        },
+        {
+            "job_id": 0,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:15:00",
+            "finish_time": "2023-03-27T07:02:00",
+            "total_consumption": 126.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 46.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 80.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.0
+                }
+            ],
+            "cost": 13.2
+        },
+        {
+            "job_id": 0,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:02:00",
+            "finish_time": "2023-03-27T07:17:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 3.0
+        },
+        {
+            "job_id": 1,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 3,
+            "machine_mode": 0,
+            "start_time": "2023-03-26T22:00:00",
+            "finish_time": "2023-03-27T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 67.2
+        },
+        {
+            "job_id": 1,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:00:00",
+            "finish_time": "2023-03-27T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.85
+        },
+        {
+            "job_id": 1,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:15:00",
+            "finish_time": "2023-03-27T06:46:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 3.41
+        },
+        {
+            "job_id": 1,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:46:00",
+            "finish_time": "2023-03-27T07:01:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.86
+        },
+        {
+            "job_id": 2,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 3,
+            "machine_mode": 0,
+            "start_time": "2023-03-26T22:00:00",
+            "finish_time": "2023-03-27T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 67.2
+        },
+        {
+            "job_id": 2,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:00:00",
+            "finish_time": "2023-03-27T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.85
+        },
+        {
+            "job_id": 2,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:15:00",
+            "finish_time": "2023-03-27T06:46:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 3.41
+        },
+        {
+            "job_id": 2,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:46:00",
+            "finish_time": "2023-03-27T06:49:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.42
+        },
+        {
+            "job_id": 2,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:49:00",
+            "finish_time": "2023-03-27T07:20:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 3.41
+        },
+        {
+            "job_id": 2,
+            "task_id": 5,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:20:00",
+            "finish_time": "2023-03-27T07:23:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.42
+        },
+        {
+            "job_id": 2,
+            "task_id": 6,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:23:00",
+            "finish_time": "2023-03-27T07:54:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 3.41
+        },
+        {
+            "job_id": 2,
+            "task_id": 7,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:54:00",
+            "finish_time": "2023-03-27T07:57:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.42
+        },
+        {
+            "job_id": 2,
+            "task_id": 8,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:57:00",
+            "finish_time": "2023-03-27T08:12:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.56
+        },
+        {
+            "job_id": 3,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 3,
+            "machine_mode": 0,
+            "start_time": "2023-03-26T23:00:00",
+            "finish_time": "2023-03-27T07:39:00",
+            "total_consumption": 259.5,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 259.5
+                }
+            ],
+            "cost": 78.45
+        },
+        {
+            "job_id": 3,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:39:00",
+            "finish_time": "2023-03-27T07:54:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 3.0
+        },
+        {
+            "job_id": 3,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:54:00",
+            "finish_time": "2023-03-27T08:18:00",
+            "total_consumption": 42.28,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 8.39
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 29.2
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 4.69
+                }
+            ],
+            "cost": 3.66
+        },
+        {
+            "job_id": 3,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T08:18:00",
+            "finish_time": "2023-03-27T08:33:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.95
+        },
+        {
+            "job_id": 4,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T06:45:00",
+            "finish_time": "2023-03-27T14:45:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 85.95
+        },
+        {
+            "job_id": 4,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T14:45:00",
+            "finish_time": "2023-03-27T15:00:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.7
+        },
+        {
+            "job_id": 4,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T15:00:00",
+            "finish_time": "2023-03-27T15:31:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 2.79
+        },
+        {
+            "job_id": 4,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T15:31:00",
+            "finish_time": "2023-03-27T15:46:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 2.4
+        },
+        {
+            "job_id": 5,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 3,
+            "machine_mode": 0,
+            "start_time": "2023-03-26T23:00:00",
+            "finish_time": "2023-03-27T07:15:00",
+            "total_consumption": 247.5,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 247.5
+                }
+            ],
+            "cost": 74.85
+        },
+        {
+            "job_id": 5,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:15:00",
+            "finish_time": "2023-03-27T07:30:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 3.0
+        },
+        {
+            "job_id": 5,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T07:30:00",
+            "finish_time": "2023-03-27T08:00:00",
+            "total_consumption": 40.95,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 13.67
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 22.29
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 4.99
+                }
+            ],
+            "cost": 4.2
+        },
+        {
+            "job_id": 5,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T08:00:00",
+            "finish_time": "2023-03-27T08:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.95
+        },
+        {
+            "job_id": 6,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 3,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T00:00:00",
+            "finish_time": "2023-03-27T08:15:00",
+            "total_consumption": 247.5,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 247.5
+                }
+            ],
+            "cost": 75.15
+        },
+        {
+            "job_id": 6,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T08:15:00",
+            "finish_time": "2023-03-27T08:30:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.95
+        },
+        {
+            "job_id": 6,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T08:30:00",
+            "finish_time": "2023-03-27T09:01:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 5.86
+        },
+        {
+            "job_id": 6,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T09:01:00",
+            "finish_time": "2023-03-27T09:04:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.6
+        },
+        {
+            "job_id": 6,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T09:04:00",
+            "finish_time": "2023-03-27T09:19:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.2
+        },
+        {
+            "job_id": 7,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T22:00:00",
+            "finish_time": "2023-03-28T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 90.0
+        },
+        {
+            "job_id": 7,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:00:00",
+            "finish_time": "2023-03-28T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.9
+        },
+        {
+            "job_id": 7,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:15:00",
+            "finish_time": "2023-03-28T06:40:00",
+            "total_consumption": 44.080000000000005,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.42
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 28.46
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.2
+                }
+            ],
+            "cost": 1.0
+        },
+        {
+            "job_id": 7,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:40:00",
+            "finish_time": "2023-03-28T06:43:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.12
+        },
+        {
+            "job_id": 7,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:43:00",
+            "finish_time": "2023-03-28T06:58:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.9
+        },
+        {
+            "job_id": 8,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T22:00:00",
+            "finish_time": "2023-03-28T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 90.0
+        },
+        {
+            "job_id": 8,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:00:00",
+            "finish_time": "2023-03-28T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.9
+        },
+        {
+            "job_id": 8,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:15:00",
+            "finish_time": "2023-03-28T06:46:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 0.93
+        },
+        {
+            "job_id": 8,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:46:00",
+            "finish_time": "2023-03-28T07:01:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.95
+        },
+        {
+            "job_id": 9,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T22:00:00",
+            "finish_time": "2023-03-28T06:00:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 90.0
+        },
+        {
+            "job_id": 9,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:00:00",
+            "finish_time": "2023-03-28T06:15:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.9
+        },
+        {
+            "job_id": 9,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:15:00",
+            "finish_time": "2023-03-28T06:46:00",
+            "total_consumption": 47.8,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 11.87
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 30.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 5.93
+                }
+            ],
+            "cost": 0.93
+        },
+        {
+            "job_id": 9,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:46:00",
+            "finish_time": "2023-03-28T07:01:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.95
+        },
+        {
+            "job_id": 10,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T22:00:00",
+            "finish_time": "2023-03-28T06:58:00",
+            "total_consumption": 269.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 269.0
+                }
+            ],
+            "cost": 92.32
+        },
+        {
+            "job_id": 10,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T06:58:00",
+            "finish_time": "2023-03-28T07:13:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 1.55
+        },
+        {
+            "job_id": 10,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:13:00",
+            "finish_time": "2023-03-28T08:13:00",
+            "total_consumption": 170.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 40.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 130.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.0
+                }
+            ],
+            "cost": 9.07
+        },
+        {
+            "job_id": 10,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T08:13:00",
+            "finish_time": "2023-03-28T08:16:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.66
+        },
+        {
+            "job_id": 10,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 0,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T08:16:00",
+            "finish_time": "2023-03-28T08:31:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.5
+        },
+        {
+            "job_id": 11,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T23:00:00",
+            "finish_time": "2023-03-28T07:01:00",
+            "total_consumption": 240.5,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.5
+                }
+            ],
+            "cost": 79.28
+        },
+        {
+            "job_id": 11,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:01:00",
+            "finish_time": "2023-03-28T07:16:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 1.65
+        },
+        {
+            "job_id": 11,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:16:00",
+            "finish_time": "2023-03-28T07:59:00",
+            "total_consumption": 106.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 26.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 80.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.0
+                }
+            ],
+            "cost": 4.3
+        },
+        {
+            "job_id": 11,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:59:00",
+            "finish_time": "2023-03-28T08:14:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.31
+        },
+        {
+            "job_id": 12,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-27T23:00:00",
+            "finish_time": "2023-03-28T07:01:00",
+            "total_consumption": 240.5,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.5
+                }
+            ],
+            "cost": 79.28
+        },
+        {
+            "job_id": 12,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:01:00",
+            "finish_time": "2023-03-28T07:16:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 1.65
+        },
+        {
+            "job_id": 12,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T07:16:00",
+            "finish_time": "2023-03-28T08:16:00",
+            "total_consumption": 170.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 40.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 130.0
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.0
+                }
+            ],
+            "cost": 9.64
+        },
+        {
+            "job_id": 12,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T08:16:00",
+            "finish_time": "2023-03-28T08:19:00",
+            "total_consumption": 3.56,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 1.44
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 1.83
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 0.29
+                }
+            ],
+            "cost": 0.66
+        },
+        {
+            "job_id": 12,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 2,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T08:19:00",
+            "finish_time": "2023-03-28T08:34:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 4.5
+        },
+        {
+            "job_id": 13,
+            "task_id": 0,
+            "factory_id": 0,
+            "machine_id": 4,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T15:02:00",
+            "finish_time": "2023-03-28T23:02:00",
+            "total_consumption": 240.0,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 240.0
+                }
+            ],
+            "cost": 83.98
+        },
+        {
+            "job_id": 13,
+            "task_id": 1,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T23:02:00",
+            "finish_time": "2023-03-28T23:17:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.9
+        },
+        {
+            "job_id": 13,
+            "task_id": 2,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T23:17:00",
+            "finish_time": "2023-03-28T23:37:00",
+            "total_consumption": 28.59,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 6.22
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 19.57
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.6
+        },
+        {
+            "job_id": 13,
+            "task_id": 3,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-28T23:42:00",
+            "finish_time": "2023-03-29T00:02:00",
+            "total_consumption": 28.59,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 6.22
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 19.57
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.58
+        },
+        {
+            "job_id": 13,
+            "task_id": 4,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-29T00:02:00",
+            "finish_time": "2023-03-29T00:22:00",
+            "total_consumption": 28.59,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 6.22
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 19.57
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.4
+        },
+        {
+            "job_id": 13,
+            "task_id": 5,
+            "factory_id": 0,
+            "machine_id": 1,
+            "machine_mode": 0,
+            "start_time": "2023-03-29T00:22:00",
+            "finish_time": "2023-03-29T00:37:00",
+            "total_consumption": 30.1,
+            "consumptions": [
+                {
+                    "resource_name": "Electricity",
+                    "consumption": 10.0
+                },
+                {
+                    "resource_name": "Cooling",
+                    "consumption": 17.3
+                },
+                {
+                    "resource_name": "Heating",
+                    "consumption": 2.8
+                }
+            ],
+            "cost": 0.6
+        }
+    ]
+}

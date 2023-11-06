@@ -1,0 +1,1528 @@
+{
+   "parameters": {
+      "id": "1",
+      "scenario": "scenario1",
+      "generated_datetime": "2023-04-03T13:27:50.717902",
+      "energy_measurement_unit": "kwh",
+      "resources": {
+         "Electricity": {
+            "name": "Electricity",
+            "measurement_unit": "MWh",
+            "measurement_type": "CONTINUES"
+         }
+      },
+      "time_granularity_in_minutes": 1,
+      "weight_vector": [
+         10,
+         1,
+         1000,
+         10,
+         1
+      ],
+      "solver": "CPSolver",
+      "max_solution_time_in_secs": 60
+   },
+   "problem": {
+      "start_time": "2022-05-24T00:00:00",
+      "finish_time": "2022-05-25T11:59:59",
+      "task_attributes": {
+         "0": {
+            "attribute_id": 0,
+            "description": "Description of task attribute 0"
+         },
+         "1": {
+            "attribute_id": 1,
+            "description": "Description of task attribute 1"
+         },
+         "2": {
+            "attribute_id": 2,
+            "description": "Description of task attribute 2"
+         }
+      },
+      "jobs": {
+         "0": {
+            "id": 0,
+            "tasks": {
+               "0": {
+                  "attribute_id": 1,
+                  "id": 0,
+                  "job_id": 0,
+                  "earliest_start_time": "2022-05-24T17:16:00"
+               },
+               "1": {
+                  "attribute_id": 2,
+                  "id": 1,
+                  "job_id": 0,
+                  "earliest_start_time": "2022-05-24T17:16:00"
+               },
+               "2": {
+                  "attribute_id": 0,
+                  "id": 2,
+                  "job_id": 0,
+                  "earliest_start_time": "2022-05-24T17:16:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 8,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 1.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 5,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 3.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T17:16:00",
+            "latest_finish_time": "2022-05-24T23:48:00"
+         },
+         "1": {
+            "id": 1,
+            "tasks": {
+               "0": {
+                  "attribute_id": 0,
+                  "id": 0,
+                  "job_id": 1,
+                  "earliest_start_time": "2022-05-24T14:34:00"
+               },
+               "1": {
+                  "attribute_id": 1,
+                  "id": 1,
+                  "job_id": 1,
+                  "earliest_start_time": "2022-05-24T14:34:00"
+               },
+               "2": {
+                  "attribute_id": 1,
+                  "id": 2,
+                  "job_id": 1,
+                  "earliest_start_time": "2022-05-24T14:34:00"
+               },
+               "3": {
+                  "attribute_id": 1,
+                  "id": 3,
+                  "job_id": 1,
+                  "earliest_start_time": "2022-05-24T14:34:00"
+               },
+               "4": {
+                  "attribute_id": 0,
+                  "id": 4,
+                  "job_id": 1,
+                  "earliest_start_time": "2022-05-24T14:34:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 9,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 10,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 1.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "max_time": 5,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 3,
+                  "task_id2": 4,
+                  "min_time": 0,
+                  "max_time": 3,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 4.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T14:34:00",
+            "latest_finish_time": "2022-05-25T02:52:00"
+         },
+         "2": {
+            "id": 2,
+            "tasks": {
+               "0": {
+                  "attribute_id": 2,
+                  "id": 0,
+                  "job_id": 2,
+                  "earliest_start_time": "2022-05-24T11:17:00"
+               },
+               "1": {
+                  "attribute_id": 0,
+                  "id": 1,
+                  "job_id": 2,
+                  "earliest_start_time": "2022-05-24T11:17:00"
+               },
+               "2": {
+                  "attribute_id": 0,
+                  "id": 2,
+                  "job_id": 2,
+                  "earliest_start_time": "2022-05-24T11:17:00"
+               },
+               "3": {
+                  "attribute_id": 1,
+                  "id": 3,
+                  "job_id": 2,
+                  "earliest_start_time": "2022-05-24T11:17:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 1,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 1.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 2,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "max_time": 7,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 4.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T11:17:00",
+            "latest_finish_time": "2022-05-24T17:35:00"
+         },
+         "3": {
+            "id": 3,
+            "tasks": {
+               "0": {
+                  "attribute_id": 1,
+                  "id": 0,
+                  "job_id": 3,
+                  "earliest_start_time": "2022-05-24T09:51:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2022-05-24T09:51:00",
+            "latest_finish_time": "2022-05-24T11:35:00"
+         },
+         "4": {
+            "id": 4,
+            "tasks": {
+               "0": {
+                  "attribute_id": 2,
+                  "id": 0,
+                  "job_id": 4,
+                  "earliest_start_time": "2022-05-24T00:04:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2022-05-24T00:04:00",
+            "latest_finish_time": "2022-05-24T01:30:00"
+         },
+         "5": {
+            "id": 5,
+            "tasks": {
+               "0": {
+                  "attribute_id": 2,
+                  "id": 0,
+                  "job_id": 5,
+                  "earliest_start_time": "2022-05-24T17:09:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2022-05-24T17:09:00",
+            "latest_finish_time": "2022-05-24T18:49:00"
+         },
+         "6": {
+            "id": 6,
+            "tasks": {
+               "0": {
+                  "attribute_id": 0,
+                  "id": 0,
+                  "job_id": 6,
+                  "earliest_start_time": "2022-05-24T06:37:00"
+               },
+               "1": {
+                  "attribute_id": 1,
+                  "id": 1,
+                  "job_id": 6,
+                  "earliest_start_time": "2022-05-24T06:37:00"
+               },
+               "2": {
+                  "attribute_id": 2,
+                  "id": 2,
+                  "job_id": 6,
+                  "earliest_start_time": "2022-05-24T06:37:00"
+               },
+               "3": {
+                  "attribute_id": 1,
+                  "id": 3,
+                  "job_id": 6,
+                  "earliest_start_time": "2022-05-24T06:37:00"
+               },
+               "4": {
+                  "attribute_id": 1,
+                  "id": 4,
+                  "job_id": 6,
+                  "earliest_start_time": "2022-05-24T06:37:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 7,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 3.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 4,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "max_time": 9,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 1.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 3,
+                  "task_id2": 4,
+                  "min_time": 0,
+                  "max_time": 1,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 2.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T06:37:00",
+            "latest_finish_time": "2022-05-24T16:55:00"
+         },
+         "7": {
+            "id": 7,
+            "tasks": {
+               "0": {
+                  "attribute_id": 2,
+                  "id": 0,
+                  "job_id": 7,
+                  "earliest_start_time": "2022-05-24T04:07:00"
+               },
+               "1": {
+                  "attribute_id": 0,
+                  "id": 1,
+                  "job_id": 7,
+                  "earliest_start_time": "2022-05-24T04:07:00"
+               },
+               "2": {
+                  "attribute_id": 1,
+                  "id": 2,
+                  "job_id": 7,
+                  "earliest_start_time": "2022-05-24T04:07:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 5,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 2.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 0,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 3.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T04:07:00",
+            "latest_finish_time": "2022-05-24T10:09:00"
+         },
+         "8": {
+            "id": 8,
+            "tasks": {
+               "0": {
+                  "attribute_id": 1,
+                  "id": 0,
+                  "job_id": 8,
+                  "earliest_start_time": "2022-05-24T06:36:00"
+               },
+               "1": {
+                  "attribute_id": 2,
+                  "id": 1,
+                  "job_id": 8,
+                  "earliest_start_time": "2022-05-24T06:36:00"
+               },
+               "2": {
+                  "attribute_id": 1,
+                  "id": 2,
+                  "job_id": 8,
+                  "earliest_start_time": "2022-05-24T06:36:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "max_time": 9,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "max_time": 1,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 1.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2022-05-24T06:36:00",
+            "latest_finish_time": "2022-05-24T12:34:00"
+         },
+         "9": {
+            "id": 9,
+            "tasks": {
+               "0": {
+                  "attribute_id": 2,
+                  "id": 0,
+                  "job_id": 9,
+                  "earliest_start_time": "2022-05-24T01:59:00"
+               }
+            },
+            "task_dependencies": [],
+            "earliest_start_time": "2022-05-24T01:59:00",
+            "latest_finish_time": "2022-05-24T04:33:00"
+         }
+      },
+      "factories": {
+         "0": {
+            "id": 0,
+            "name": "Factory0",
+            "energy_source_names": [
+               "Market 0"
+            ],
+            "machines": {
+               "0": {
+                  "id": 0,
+                  "name": "machine0",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     1,
+                     2
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 18,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 16.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 20,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 5,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 11.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 2,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 19.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 6,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 13.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 1,
+                        "time": 19,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 18.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "time": 39,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 23.34
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "time": 37,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 38.9
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 3,
+                              "time": 52,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 83.68
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "time": 50,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 30.67
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "time": 37,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 95.88
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 1,
+                              "time": 36,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 56.4
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "time": 14,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 81.39
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "time": 12,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 57.49
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 3,
+                              "task_id": 0,
+                              "time": 43,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 61.26
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 4,
+                              "task_id": 0,
+                              "time": 17,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 80.53
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 0,
+                              "time": 32,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 42.51
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 2,
+                              "time": 54,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 55.15
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 3,
+                              "time": 14,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 68.71
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 4,
+                              "time": 27,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 47.46
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 0,
+                              "time": 21,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 36.35
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 2,
+                              "time": 33,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 48.92
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 0,
+                              "time": 24,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 48.01
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 1,
+                              "time": 25,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 21.08
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 2,
+                              "time": 11,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 62.58
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 9,
+                              "task_id": 0,
+                              "time": 58,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 37.55
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 2,
+                              "time": 46,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 44.0
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 5,
+                              "task_id": 0,
+                              "time": 49,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 56.0
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 1,
+                              "time": 54,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 80.0
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "1": {
+                        "id": 1,
+                        "description": "",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "time": 39,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 23.21
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "time": 37,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 38.95
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 1,
+                              "time": 25,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 100.5
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "time": 39,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 24.07
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "time": 29,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 75.9
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "time": 19,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 105.48
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "time": 17,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 80.76
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 3,
+                              "task_id": 0,
+                              "time": 56,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 79.21
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 4,
+                              "task_id": 0,
+                              "time": 16,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 79.41
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 0,
+                              "time": 46,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 61.65
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 2,
+                              "time": 47,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 48.84
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 3,
+                              "time": 24,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 115.33
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 4,
+                              "time": 28,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 49.03
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 0,
+                              "time": 22,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 37.71
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 1,
+                              "time": 36,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 58.0
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 2,
+                              "time": 26,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 38.79
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 0,
+                              "time": 24,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 48.54
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 1,
+                              "time": 32,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 27.05
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 2,
+                              "time": 17,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 92.31
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 0,
+                              "time": 36,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 78.0
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "2": {
+                        "id": 2,
+                        "description": "",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "time": 38,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 22.76
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "time": 33,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 34.65
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 1,
+                              "time": 19,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 76.6
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 3,
+                              "time": 47,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 75.5
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "time": 39,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 23.73
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "time": 35,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 89.63
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "time": 20,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 109.12
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "time": 14,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 65.04
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 3,
+                              "task_id": 0,
+                              "time": 44,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 62.6
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 0,
+                              "time": 44,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 58.45
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 2,
+                              "time": 72,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 73.49
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 3,
+                              "time": 19,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 91.4
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 6,
+                              "task_id": 4,
+                              "time": 17,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 30.23
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 0,
+                              "time": 29,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 49.59
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 1,
+                              "time": 24,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 39.28
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 7,
+                              "task_id": 2,
+                              "time": 25,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 37.72
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 0,
+                              "time": 21,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 42.53
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 8,
+                              "task_id": 2,
+                              "time": 19,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 101.41
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 9,
+                              "task_id": 0,
+                              "time": 58,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 37.53
+                                 }
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 2,
+                              "time": 70,
+                              "consumptions": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 28.0
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  "capacity": 1
+               }
+            }
+         }
+      }
+   },
+   "energy_sources": {
+      "Market 0": {
+         "name": "Market 0",
+         "resource_name": "Electricity",
+         "charge_intervals": [
+            {
+               "from_datetime": "2022-05-24T00:00:00",
+               "to_datetime": "2022-05-24T01:00:00",
+               "cost": 106.37
+            },
+            {
+               "from_datetime": "2022-05-24T01:00:00",
+               "to_datetime": "2022-05-24T02:00:00",
+               "cost": 360.25
+            },
+            {
+               "from_datetime": "2022-05-24T02:00:00",
+               "to_datetime": "2022-05-24T03:00:00",
+               "cost": 370.18
+            },
+            {
+               "from_datetime": "2022-05-24T03:00:00",
+               "to_datetime": "2022-05-24T04:00:00",
+               "cost": 87.49
+            },
+            {
+               "from_datetime": "2022-05-24T04:00:00",
+               "to_datetime": "2022-05-24T05:00:00",
+               "cost": 113.3
+            },
+            {
+               "from_datetime": "2022-05-24T05:00:00",
+               "to_datetime": "2022-05-24T06:00:00",
+               "cost": 202.72
+            },
+            {
+               "from_datetime": "2022-05-24T06:00:00",
+               "to_datetime": "2022-05-24T07:00:00",
+               "cost": 244.44
+            },
+            {
+               "from_datetime": "2022-05-24T07:00:00",
+               "to_datetime": "2022-05-24T08:00:00",
+               "cost": 76.49
+            },
+            {
+               "from_datetime": "2022-05-24T08:00:00",
+               "to_datetime": "2022-05-24T09:00:00",
+               "cost": 254.1
+            },
+            {
+               "from_datetime": "2022-05-24T09:00:00",
+               "to_datetime": "2022-05-24T10:00:00",
+               "cost": 176.24
+            },
+            {
+               "from_datetime": "2022-05-24T10:00:00",
+               "to_datetime": "2022-05-24T11:00:00",
+               "cost": 224.65
+            },
+            {
+               "from_datetime": "2022-05-24T11:00:00",
+               "to_datetime": "2022-05-24T12:00:00",
+               "cost": 353.35
+            },
+            {
+               "from_datetime": "2022-05-24T12:00:00",
+               "to_datetime": "2022-05-24T13:00:00",
+               "cost": 257.48
+            },
+            {
+               "from_datetime": "2022-05-24T13:00:00",
+               "to_datetime": "2022-05-24T14:00:00",
+               "cost": 343.74
+            },
+            {
+               "from_datetime": "2022-05-24T14:00:00",
+               "to_datetime": "2022-05-24T15:00:00",
+               "cost": 172.4
+            },
+            {
+               "from_datetime": "2022-05-24T15:00:00",
+               "to_datetime": "2022-05-24T16:00:00",
+               "cost": 214.39
+            },
+            {
+               "from_datetime": "2022-05-24T16:00:00",
+               "to_datetime": "2022-05-24T17:00:00",
+               "cost": 129.84
+            },
+            {
+               "from_datetime": "2022-05-24T17:00:00",
+               "to_datetime": "2022-05-24T18:00:00",
+               "cost": 334.86
+            },
+            {
+               "from_datetime": "2022-05-24T18:00:00",
+               "to_datetime": "2022-05-24T19:00:00",
+               "cost": 185.48
+            },
+            {
+               "from_datetime": "2022-05-24T19:00:00",
+               "to_datetime": "2022-05-24T20:00:00",
+               "cost": 354.06
+            },
+            {
+               "from_datetime": "2022-05-24T20:00:00",
+               "to_datetime": "2022-05-24T21:00:00",
+               "cost": 214.82
+            },
+            {
+               "from_datetime": "2022-05-24T21:00:00",
+               "to_datetime": "2022-05-24T22:00:00",
+               "cost": 301.12
+            },
+            {
+               "from_datetime": "2022-05-24T22:00:00",
+               "to_datetime": "2022-05-24T23:00:00",
+               "cost": 311.96
+            },
+            {
+               "from_datetime": "2022-05-24T23:00:00",
+               "to_datetime": "2022-05-25T00:00:00",
+               "cost": 86.34
+            },
+            {
+               "from_datetime": "2022-05-25T00:00:00",
+               "to_datetime": "2022-05-25T01:00:00",
+               "cost": 326.22
+            },
+            {
+               "from_datetime": "2022-05-25T01:00:00",
+               "to_datetime": "2022-05-25T02:00:00",
+               "cost": 143.8
+            },
+            {
+               "from_datetime": "2022-05-25T02:00:00",
+               "to_datetime": "2022-05-25T03:00:00",
+               "cost": 102.73
+            },
+            {
+               "from_datetime": "2022-05-25T03:00:00",
+               "to_datetime": "2022-05-25T04:00:00",
+               "cost": 385.64
+            },
+            {
+               "from_datetime": "2022-05-25T04:00:00",
+               "to_datetime": "2022-05-25T05:00:00",
+               "cost": 388.89
+            },
+            {
+               "from_datetime": "2022-05-25T05:00:00",
+               "to_datetime": "2022-05-25T06:00:00",
+               "cost": 346.77
+            },
+            {
+               "from_datetime": "2022-05-25T06:00:00",
+               "to_datetime": "2022-05-25T07:00:00",
+               "cost": 205.68
+            },
+            {
+               "from_datetime": "2022-05-25T07:00:00",
+               "to_datetime": "2022-05-25T08:00:00",
+               "cost": 127.55
+            },
+            {
+               "from_datetime": "2022-05-25T08:00:00",
+               "to_datetime": "2022-05-25T09:00:00",
+               "cost": 156.62
+            },
+            {
+               "from_datetime": "2022-05-25T09:00:00",
+               "to_datetime": "2022-05-25T10:00:00",
+               "cost": 70.55
+            },
+            {
+               "from_datetime": "2022-05-25T10:00:00",
+               "to_datetime": "2022-05-25T11:00:00",
+               "cost": 126.36
+            },
+            {
+               "from_datetime": "2022-05-25T11:00:00",
+               "to_datetime": "2022-05-25T12:00:00",
+               "cost": 380.15
+            },
+            {
+               "from_datetime": "2022-05-25T12:00:00",
+               "to_datetime": "2022-05-25T13:00:00",
+               "cost": 271.12
+            }
+         ],
+         "consumption_multiplier": 1000.0
+      }
+   },
+   "initial_solution": null
+}

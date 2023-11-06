@@ -1,0 +1,2019 @@
+{
+   "parameters": {
+      "id": "1",
+      "scenario": "scenario1",
+      "generated_datetime": "2023-05-03T08:09:10.806996",
+      "energy_measurement_unit": "kWh",
+      "resources": {
+         "Electricity": {
+            "name": "Electricity",
+            "measurement_unit": "KWh",
+            "measurement_type": "CONTINUES"
+         }
+      },
+      "time_granularity_in_minutes": 1,
+      "weight_vector": [
+         10,
+         1,
+         1000,
+         10,
+         1
+      ],
+      "solver": "CPSolver",
+      "max_solution_time_in_secs": 60
+   },
+   "problem": {
+      "start_time": "2023-04-02T06:00:00",
+      "finish_time": "2023-04-06T06:00:00",
+      "task_attributes": {
+         "0": {
+            "attribute_id": 0,
+            "description": "Product_0",
+            "state": {
+               "Product": 0.0
+            }
+         },
+         "1": {
+            "attribute_id": 1,
+            "description": "Product_1",
+            "state": {
+               "Product": 1.0
+            }
+         }
+      },
+      "jobs": {
+         "0": {
+            "id": 0,
+            "product_name": "Camshaft Hardening",
+            "tasks": {
+               "0": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        0,
+                        50
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "1": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        0,
+                        50
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "2": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        0,
+                        50
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "3": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        0,
+                        50
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               },
+               "4": {
+                  "name": "Camshaft Hardening",
+                  "attribute_id": 0,
+                  "out_products": [
+                     [
+                        0,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        0,
+                        0,
+                        50
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 0,
+                  "earliest_start_time": "2023-04-03T11:00:00",
+                  "latest_finish_time": "2023-04-03T16:00:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 3,
+                  "task_id2": 4,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2023-04-03T11:00:00",
+            "latest_finish_time": "2023-04-03T16:00:00",
+            "product_limits": [
+               [
+                  0,
+                  50.0,
+                  50.0
+               ]
+            ]
+         },
+         "1": {
+            "id": 1,
+            "product_name": "Battery Cell welding",
+            "tasks": {
+               "0": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        1250
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "1": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        1250
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "2": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        1250
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "3": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        1250
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               },
+               "4": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        1250
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 1,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-04T22:00:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 3,
+                  "task_id2": 4,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2023-04-03T06:00:00",
+            "latest_finish_time": "2023-04-04T22:00:00",
+            "product_limits": [
+               [
+                  1,
+                  1250.0,
+                  1250.0
+               ]
+            ]
+         },
+         "2": {
+            "id": 2,
+            "product_name": "Battery Cell welding",
+            "tasks": {
+               "0": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        900
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 0,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-05T17:00:00"
+               },
+               "1": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        900
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 1,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-05T17:00:00"
+               },
+               "2": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        900
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 2,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-05T17:00:00"
+               },
+               "3": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        900
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 3,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-05T17:00:00"
+               },
+               "4": {
+                  "name": "Battery Cell welding",
+                  "attribute_id": 1,
+                  "out_products": [
+                     [
+                        1,
+                        1.0
+                     ]
+                  ],
+                  "product_limits": [
+                     [
+                        1,
+                        0,
+                        900
+                     ]
+                  ],
+                  "is_optional": true,
+                  "id": 4,
+                  "job_id": 2,
+                  "earliest_start_time": "2023-04-03T06:00:00",
+                  "latest_finish_time": "2023-04-05T17:00:00"
+               }
+            },
+            "task_dependencies": [
+               {
+                  "task_id1": 0,
+                  "task_id2": 1,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 1,
+                  "task_id2": 2,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 2,
+                  "task_id2": 3,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               },
+               {
+                  "task_id1": 3,
+                  "task_id2": 4,
+                  "min_time": 0,
+                  "use_same_machine": false,
+                  "keep_together": false,
+                  "consumptions": [
+                     {
+                        "resource_name": "Electricity",
+                        "consumption": 0.0
+                     }
+                  ]
+               }
+            ],
+            "earliest_start_time": "2023-04-03T06:00:00",
+            "latest_finish_time": "2023-04-05T17:00:00",
+            "product_limits": [
+               [
+                  1,
+                  900.0,
+                  900.0
+               ]
+            ]
+         }
+      },
+      "factories": {
+         "0": {
+            "id": 0,
+            "name": "Factory0",
+            "energy_source_names": [
+               "Market 0"
+            ],
+            "machines": {
+               "0": {
+                  "id": 0,
+                  "name": "Prima_0",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     1
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": [
+                           {
+                              "job_id": 0,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 75,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 6.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 75,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 6.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 75,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 6.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 75,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 6.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 0,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 75,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 6.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    0,
+                                    1.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 625,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 625,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 625,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 625,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 1,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 625,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 0,
+                              "min_time": 0,
+                              "max_time": 450,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 1,
+                              "min_time": 0,
+                              "max_time": 450,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 2,
+                              "min_time": 0,
+                              "max_time": 450,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 3,
+                              "min_time": 0,
+                              "max_time": 450,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           },
+                           {
+                              "job_id": 2,
+                              "task_id": 4,
+                              "min_time": 0,
+                              "max_time": 450,
+                              "consumptions_per_min": [
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 1.0
+                                 },
+                                 {
+                                    "resource_name": "Electricity",
+                                    "consumption": 0.0
+                                 }
+                              ],
+                              "production": [
+                                 [
+                                    1,
+                                    0.5,
+                                    1.0
+                                 ]
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1
+               }
+            },
+            "cost_components": {
+               "Electricity": {
+                  "name": "Electricity Cost",
+                  "resource_name": "Electricity",
+                  "cost_intervals": [
+                     {
+                        "from_datetime": "2023-04-02T06:00:00",
+                        "to_datetime": "2023-04-02T07:00:00",
+                        "cost": 0.17017
+                     },
+                     {
+                        "from_datetime": "2023-04-02T07:00:00",
+                        "to_datetime": "2023-04-02T08:00:00",
+                        "cost": 0.13341999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-02T08:00:00",
+                        "to_datetime": "2023-04-02T09:00:00",
+                        "cost": 0.10044
+                     },
+                     {
+                        "from_datetime": "2023-04-02T09:00:00",
+                        "to_datetime": "2023-04-02T10:00:00",
+                        "cost": 0.19113999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-02T10:00:00",
+                        "to_datetime": "2023-04-02T11:00:00",
+                        "cost": 0.32647000000000004
+                     },
+                     {
+                        "from_datetime": "2023-04-02T11:00:00",
+                        "to_datetime": "2023-04-02T12:00:00",
+                        "cost": 0.13604
+                     },
+                     {
+                        "from_datetime": "2023-04-02T12:00:00",
+                        "to_datetime": "2023-04-02T13:00:00",
+                        "cost": 0.10518999999999999
+                     },
+                     {
+                        "from_datetime": "2023-04-02T13:00:00",
+                        "to_datetime": "2023-04-02T14:00:00",
+                        "cost": 0.24774000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-02T14:00:00",
+                        "to_datetime": "2023-04-02T15:00:00",
+                        "cost": 0.26952
+                     },
+                     {
+                        "from_datetime": "2023-04-02T15:00:00",
+                        "to_datetime": "2023-04-02T16:00:00",
+                        "cost": 0.18381
+                     },
+                     {
+                        "from_datetime": "2023-04-02T16:00:00",
+                        "to_datetime": "2023-04-02T17:00:00",
+                        "cost": 0.24808000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-02T17:00:00",
+                        "to_datetime": "2023-04-02T18:00:00",
+                        "cost": 0.13948
+                     },
+                     {
+                        "from_datetime": "2023-04-02T18:00:00",
+                        "to_datetime": "2023-04-02T19:00:00",
+                        "cost": 0.19988
+                     },
+                     {
+                        "from_datetime": "2023-04-02T19:00:00",
+                        "to_datetime": "2023-04-02T20:00:00",
+                        "cost": 0.19002000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-02T20:00:00",
+                        "to_datetime": "2023-04-02T21:00:00",
+                        "cost": 0.30129
+                     },
+                     {
+                        "from_datetime": "2023-04-02T21:00:00",
+                        "to_datetime": "2023-04-02T22:00:00",
+                        "cost": 0.09718
+                     },
+                     {
+                        "from_datetime": "2023-04-02T22:00:00",
+                        "to_datetime": "2023-04-02T23:00:00",
+                        "cost": 0.25096
+                     },
+                     {
+                        "from_datetime": "2023-04-02T23:00:00",
+                        "to_datetime": "2023-04-03T00:00:00",
+                        "cost": 0.10118
+                     },
+                     {
+                        "from_datetime": "2023-04-03T00:00:00",
+                        "to_datetime": "2023-04-03T01:00:00",
+                        "cost": 0.28046
+                     },
+                     {
+                        "from_datetime": "2023-04-03T01:00:00",
+                        "to_datetime": "2023-04-03T02:00:00",
+                        "cost": 0.27964999999999995
+                     },
+                     {
+                        "from_datetime": "2023-04-03T02:00:00",
+                        "to_datetime": "2023-04-03T03:00:00",
+                        "cost": 0.16675
+                     },
+                     {
+                        "from_datetime": "2023-04-03T03:00:00",
+                        "to_datetime": "2023-04-03T04:00:00",
+                        "cost": 0.20462
+                     },
+                     {
+                        "from_datetime": "2023-04-03T04:00:00",
+                        "to_datetime": "2023-04-03T05:00:00",
+                        "cost": 0.25011
+                     },
+                     {
+                        "from_datetime": "2023-04-03T05:00:00",
+                        "to_datetime": "2023-04-03T06:00:00",
+                        "cost": 0.22790000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-03T06:00:00",
+                        "to_datetime": "2023-04-03T07:00:00",
+                        "cost": 0.19057
+                     },
+                     {
+                        "from_datetime": "2023-04-03T07:00:00",
+                        "to_datetime": "2023-04-03T08:00:00",
+                        "cost": 0.25299
+                     },
+                     {
+                        "from_datetime": "2023-04-03T08:00:00",
+                        "to_datetime": "2023-04-03T09:00:00",
+                        "cost": 0.30345
+                     },
+                     {
+                        "from_datetime": "2023-04-03T09:00:00",
+                        "to_datetime": "2023-04-03T10:00:00",
+                        "cost": 0.30165
+                     },
+                     {
+                        "from_datetime": "2023-04-03T10:00:00",
+                        "to_datetime": "2023-04-03T11:00:00",
+                        "cost": 0.22190000000000001
+                     },
+                     {
+                        "from_datetime": "2023-04-03T11:00:00",
+                        "to_datetime": "2023-04-03T12:00:00",
+                        "cost": 0.16433
+                     },
+                     {
+                        "from_datetime": "2023-04-03T12:00:00",
+                        "to_datetime": "2023-04-03T13:00:00",
+                        "cost": 0.21203999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-03T13:00:00",
+                        "to_datetime": "2023-04-03T14:00:00",
+                        "cost": 0.23573
+                     },
+                     {
+                        "from_datetime": "2023-04-03T14:00:00",
+                        "to_datetime": "2023-04-03T15:00:00",
+                        "cost": 0.17637
+                     },
+                     {
+                        "from_datetime": "2023-04-03T15:00:00",
+                        "to_datetime": "2023-04-03T16:00:00",
+                        "cost": 0.27023
+                     },
+                     {
+                        "from_datetime": "2023-04-03T16:00:00",
+                        "to_datetime": "2023-04-03T17:00:00",
+                        "cost": 0.29319
+                     },
+                     {
+                        "from_datetime": "2023-04-03T17:00:00",
+                        "to_datetime": "2023-04-03T18:00:00",
+                        "cost": 0.33155
+                     },
+                     {
+                        "from_datetime": "2023-04-03T18:00:00",
+                        "to_datetime": "2023-04-03T19:00:00",
+                        "cost": 0.28582
+                     },
+                     {
+                        "from_datetime": "2023-04-03T19:00:00",
+                        "to_datetime": "2023-04-03T20:00:00",
+                        "cost": 0.18433000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-03T20:00:00",
+                        "to_datetime": "2023-04-03T21:00:00",
+                        "cost": 0.27975
+                     },
+                     {
+                        "from_datetime": "2023-04-03T21:00:00",
+                        "to_datetime": "2023-04-03T22:00:00",
+                        "cost": 0.16397
+                     },
+                     {
+                        "from_datetime": "2023-04-03T22:00:00",
+                        "to_datetime": "2023-04-03T23:00:00",
+                        "cost": 0.11573
+                     },
+                     {
+                        "from_datetime": "2023-04-03T23:00:00",
+                        "to_datetime": "2023-04-04T00:00:00",
+                        "cost": 0.26092000000000004
+                     },
+                     {
+                        "from_datetime": "2023-04-04T00:00:00",
+                        "to_datetime": "2023-04-04T01:00:00",
+                        "cost": 0.33038
+                     },
+                     {
+                        "from_datetime": "2023-04-04T01:00:00",
+                        "to_datetime": "2023-04-04T02:00:00",
+                        "cost": 0.27731
+                     },
+                     {
+                        "from_datetime": "2023-04-04T02:00:00",
+                        "to_datetime": "2023-04-04T03:00:00",
+                        "cost": 0.20037
+                     },
+                     {
+                        "from_datetime": "2023-04-04T03:00:00",
+                        "to_datetime": "2023-04-04T04:00:00",
+                        "cost": 0.25945999999999997
+                     },
+                     {
+                        "from_datetime": "2023-04-04T04:00:00",
+                        "to_datetime": "2023-04-04T05:00:00",
+                        "cost": 0.22144
+                     },
+                     {
+                        "from_datetime": "2023-04-04T05:00:00",
+                        "to_datetime": "2023-04-04T06:00:00",
+                        "cost": 0.10821
+                     },
+                     {
+                        "from_datetime": "2023-04-04T06:00:00",
+                        "to_datetime": "2023-04-04T07:00:00",
+                        "cost": 0.21352000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-04T07:00:00",
+                        "to_datetime": "2023-04-04T08:00:00",
+                        "cost": 0.14414
+                     },
+                     {
+                        "from_datetime": "2023-04-04T08:00:00",
+                        "to_datetime": "2023-04-04T09:00:00",
+                        "cost": 0.22565000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-04T09:00:00",
+                        "to_datetime": "2023-04-04T10:00:00",
+                        "cost": 0.20448
+                     },
+                     {
+                        "from_datetime": "2023-04-04T10:00:00",
+                        "to_datetime": "2023-04-04T11:00:00",
+                        "cost": 0.24947999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-04T11:00:00",
+                        "to_datetime": "2023-04-04T12:00:00",
+                        "cost": 0.32476
+                     },
+                     {
+                        "from_datetime": "2023-04-04T12:00:00",
+                        "to_datetime": "2023-04-04T13:00:00",
+                        "cost": 0.32881
+                     },
+                     {
+                        "from_datetime": "2023-04-04T13:00:00",
+                        "to_datetime": "2023-04-04T14:00:00",
+                        "cost": 0.17356
+                     },
+                     {
+                        "from_datetime": "2023-04-04T14:00:00",
+                        "to_datetime": "2023-04-04T15:00:00",
+                        "cost": 0.09648999999999999
+                     },
+                     {
+                        "from_datetime": "2023-04-04T15:00:00",
+                        "to_datetime": "2023-04-04T16:00:00",
+                        "cost": 0.20122
+                     },
+                     {
+                        "from_datetime": "2023-04-04T16:00:00",
+                        "to_datetime": "2023-04-04T17:00:00",
+                        "cost": 0.20412
+                     },
+                     {
+                        "from_datetime": "2023-04-04T17:00:00",
+                        "to_datetime": "2023-04-04T18:00:00",
+                        "cost": 0.19100999999999999
+                     },
+                     {
+                        "from_datetime": "2023-04-04T18:00:00",
+                        "to_datetime": "2023-04-04T19:00:00",
+                        "cost": 0.16768
+                     },
+                     {
+                        "from_datetime": "2023-04-04T19:00:00",
+                        "to_datetime": "2023-04-04T20:00:00",
+                        "cost": 0.27358
+                     },
+                     {
+                        "from_datetime": "2023-04-04T20:00:00",
+                        "to_datetime": "2023-04-04T21:00:00",
+                        "cost": 0.32138
+                     },
+                     {
+                        "from_datetime": "2023-04-04T21:00:00",
+                        "to_datetime": "2023-04-04T22:00:00",
+                        "cost": 0.18905000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-04T22:00:00",
+                        "to_datetime": "2023-04-04T23:00:00",
+                        "cost": 0.12862
+                     },
+                     {
+                        "from_datetime": "2023-04-04T23:00:00",
+                        "to_datetime": "2023-04-05T00:00:00",
+                        "cost": 0.18928
+                     },
+                     {
+                        "from_datetime": "2023-04-05T00:00:00",
+                        "to_datetime": "2023-04-05T01:00:00",
+                        "cost": 0.10008
+                     },
+                     {
+                        "from_datetime": "2023-04-05T01:00:00",
+                        "to_datetime": "2023-04-05T02:00:00",
+                        "cost": 0.1638
+                     },
+                     {
+                        "from_datetime": "2023-04-05T02:00:00",
+                        "to_datetime": "2023-04-05T03:00:00",
+                        "cost": 0.33312
+                     },
+                     {
+                        "from_datetime": "2023-04-05T03:00:00",
+                        "to_datetime": "2023-04-05T04:00:00",
+                        "cost": 0.11614000000000001
+                     },
+                     {
+                        "from_datetime": "2023-04-05T04:00:00",
+                        "to_datetime": "2023-04-05T05:00:00",
+                        "cost": 0.30684
+                     },
+                     {
+                        "from_datetime": "2023-04-05T05:00:00",
+                        "to_datetime": "2023-04-05T06:00:00",
+                        "cost": 0.21722
+                     },
+                     {
+                        "from_datetime": "2023-04-05T06:00:00",
+                        "to_datetime": "2023-04-05T07:00:00",
+                        "cost": 0.28352
+                     },
+                     {
+                        "from_datetime": "2023-04-05T07:00:00",
+                        "to_datetime": "2023-04-05T08:00:00",
+                        "cost": 0.28097000000000005
+                     },
+                     {
+                        "from_datetime": "2023-04-05T08:00:00",
+                        "to_datetime": "2023-04-05T09:00:00",
+                        "cost": 0.30879
+                     },
+                     {
+                        "from_datetime": "2023-04-05T09:00:00",
+                        "to_datetime": "2023-04-05T10:00:00",
+                        "cost": 0.24109999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-05T10:00:00",
+                        "to_datetime": "2023-04-05T11:00:00",
+                        "cost": 0.28152
+                     },
+                     {
+                        "from_datetime": "2023-04-05T11:00:00",
+                        "to_datetime": "2023-04-05T12:00:00",
+                        "cost": 0.17837
+                     },
+                     {
+                        "from_datetime": "2023-04-05T12:00:00",
+                        "to_datetime": "2023-04-05T13:00:00",
+                        "cost": 0.15891999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-05T13:00:00",
+                        "to_datetime": "2023-04-05T14:00:00",
+                        "cost": 0.31143
+                     },
+                     {
+                        "from_datetime": "2023-04-05T14:00:00",
+                        "to_datetime": "2023-04-05T15:00:00",
+                        "cost": 0.32506
+                     },
+                     {
+                        "from_datetime": "2023-04-05T15:00:00",
+                        "to_datetime": "2023-04-05T16:00:00",
+                        "cost": 0.15491999999999997
+                     },
+                     {
+                        "from_datetime": "2023-04-05T16:00:00",
+                        "to_datetime": "2023-04-05T17:00:00",
+                        "cost": 0.22109
+                     },
+                     {
+                        "from_datetime": "2023-04-05T17:00:00",
+                        "to_datetime": "2023-04-05T18:00:00",
+                        "cost": 0.22938
+                     },
+                     {
+                        "from_datetime": "2023-04-05T18:00:00",
+                        "to_datetime": "2023-04-05T19:00:00",
+                        "cost": 0.12505
+                     },
+                     {
+                        "from_datetime": "2023-04-05T19:00:00",
+                        "to_datetime": "2023-04-05T20:00:00",
+                        "cost": 0.14377
+                     },
+                     {
+                        "from_datetime": "2023-04-05T20:00:00",
+                        "to_datetime": "2023-04-05T21:00:00",
+                        "cost": 0.1549
+                     },
+                     {
+                        "from_datetime": "2023-04-05T21:00:00",
+                        "to_datetime": "2023-04-05T22:00:00",
+                        "cost": 0.28742
+                     },
+                     {
+                        "from_datetime": "2023-04-05T22:00:00",
+                        "to_datetime": "2023-04-05T23:00:00",
+                        "cost": 0.30163
+                     },
+                     {
+                        "from_datetime": "2023-04-05T23:00:00",
+                        "to_datetime": "2023-04-06T00:00:00",
+                        "cost": 0.13355
+                     },
+                     {
+                        "from_datetime": "2023-04-06T00:00:00",
+                        "to_datetime": "2023-04-06T01:00:00",
+                        "cost": 0.15827000000000002
+                     },
+                     {
+                        "from_datetime": "2023-04-06T01:00:00",
+                        "to_datetime": "2023-04-06T02:00:00",
+                        "cost": 0.25542
+                     },
+                     {
+                        "from_datetime": "2023-04-06T02:00:00",
+                        "to_datetime": "2023-04-06T03:00:00",
+                        "cost": 0.22307
+                     },
+                     {
+                        "from_datetime": "2023-04-06T03:00:00",
+                        "to_datetime": "2023-04-06T04:00:00",
+                        "cost": 0.11797
+                     },
+                     {
+                        "from_datetime": "2023-04-06T04:00:00",
+                        "to_datetime": "2023-04-06T05:00:00",
+                        "cost": 0.16105
+                     },
+                     {
+                        "from_datetime": "2023-04-06T05:00:00",
+                        "to_datetime": "2023-04-06T06:00:00",
+                        "cost": 0.21922999999999998
+                     },
+                     {
+                        "from_datetime": "2023-04-06T06:00:00",
+                        "to_datetime": "2023-04-06T07:00:00",
+                        "cost": 0.15763999999999997
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      "out_products": {
+         "0": {
+            "id": 0,
+            "name": "Camshaft Hardening"
+         },
+         "1": {
+            "id": 1,
+            "name": "Battery Cell welding"
+         }
+      },
+      "productSequences": {
+         "0": {
+            "product_id": 0,
+            "job_ids": [
+               0
+            ]
+         },
+         "1": {
+            "product_id": 1,
+            "job_ids": [
+               1,
+               2
+            ]
+         }
+      }
+   },
+   "energy_sources": {
+      "Market 0": {
+         "name": "Market 0",
+         "resource_name": "Electricity",
+         "cost_intervals": [
+            {
+               "from_datetime": "2023-04-02T06:00:00",
+               "to_datetime": "2023-04-02T07:00:00",
+               "cost": 170.17
+            },
+            {
+               "from_datetime": "2023-04-02T07:00:00",
+               "to_datetime": "2023-04-02T08:00:00",
+               "cost": 133.42
+            },
+            {
+               "from_datetime": "2023-04-02T08:00:00",
+               "to_datetime": "2023-04-02T09:00:00",
+               "cost": 100.44
+            },
+            {
+               "from_datetime": "2023-04-02T09:00:00",
+               "to_datetime": "2023-04-02T10:00:00",
+               "cost": 191.14
+            },
+            {
+               "from_datetime": "2023-04-02T10:00:00",
+               "to_datetime": "2023-04-02T11:00:00",
+               "cost": 326.47
+            },
+            {
+               "from_datetime": "2023-04-02T11:00:00",
+               "to_datetime": "2023-04-02T12:00:00",
+               "cost": 136.04
+            },
+            {
+               "from_datetime": "2023-04-02T12:00:00",
+               "to_datetime": "2023-04-02T13:00:00",
+               "cost": 105.19
+            },
+            {
+               "from_datetime": "2023-04-02T13:00:00",
+               "to_datetime": "2023-04-02T14:00:00",
+               "cost": 247.74
+            },
+            {
+               "from_datetime": "2023-04-02T14:00:00",
+               "to_datetime": "2023-04-02T15:00:00",
+               "cost": 269.52
+            },
+            {
+               "from_datetime": "2023-04-02T15:00:00",
+               "to_datetime": "2023-04-02T16:00:00",
+               "cost": 183.81
+            },
+            {
+               "from_datetime": "2023-04-02T16:00:00",
+               "to_datetime": "2023-04-02T17:00:00",
+               "cost": 248.08
+            },
+            {
+               "from_datetime": "2023-04-02T17:00:00",
+               "to_datetime": "2023-04-02T18:00:00",
+               "cost": 139.48
+            },
+            {
+               "from_datetime": "2023-04-02T18:00:00",
+               "to_datetime": "2023-04-02T19:00:00",
+               "cost": 199.88
+            },
+            {
+               "from_datetime": "2023-04-02T19:00:00",
+               "to_datetime": "2023-04-02T20:00:00",
+               "cost": 190.02
+            },
+            {
+               "from_datetime": "2023-04-02T20:00:00",
+               "to_datetime": "2023-04-02T21:00:00",
+               "cost": 301.29
+            },
+            {
+               "from_datetime": "2023-04-02T21:00:00",
+               "to_datetime": "2023-04-02T22:00:00",
+               "cost": 97.18
+            },
+            {
+               "from_datetime": "2023-04-02T22:00:00",
+               "to_datetime": "2023-04-02T23:00:00",
+               "cost": 250.96
+            },
+            {
+               "from_datetime": "2023-04-02T23:00:00",
+               "to_datetime": "2023-04-03T00:00:00",
+               "cost": 101.18
+            },
+            {
+               "from_datetime": "2023-04-03T00:00:00",
+               "to_datetime": "2023-04-03T01:00:00",
+               "cost": 280.46
+            },
+            {
+               "from_datetime": "2023-04-03T01:00:00",
+               "to_datetime": "2023-04-03T02:00:00",
+               "cost": 279.65
+            },
+            {
+               "from_datetime": "2023-04-03T02:00:00",
+               "to_datetime": "2023-04-03T03:00:00",
+               "cost": 166.75
+            },
+            {
+               "from_datetime": "2023-04-03T03:00:00",
+               "to_datetime": "2023-04-03T04:00:00",
+               "cost": 204.62
+            },
+            {
+               "from_datetime": "2023-04-03T04:00:00",
+               "to_datetime": "2023-04-03T05:00:00",
+               "cost": 250.11
+            },
+            {
+               "from_datetime": "2023-04-03T05:00:00",
+               "to_datetime": "2023-04-03T06:00:00",
+               "cost": 227.9
+            },
+            {
+               "from_datetime": "2023-04-03T06:00:00",
+               "to_datetime": "2023-04-03T07:00:00",
+               "cost": 190.57
+            },
+            {
+               "from_datetime": "2023-04-03T07:00:00",
+               "to_datetime": "2023-04-03T08:00:00",
+               "cost": 252.99
+            },
+            {
+               "from_datetime": "2023-04-03T08:00:00",
+               "to_datetime": "2023-04-03T09:00:00",
+               "cost": 303.45
+            },
+            {
+               "from_datetime": "2023-04-03T09:00:00",
+               "to_datetime": "2023-04-03T10:00:00",
+               "cost": 301.65
+            },
+            {
+               "from_datetime": "2023-04-03T10:00:00",
+               "to_datetime": "2023-04-03T11:00:00",
+               "cost": 221.9
+            },
+            {
+               "from_datetime": "2023-04-03T11:00:00",
+               "to_datetime": "2023-04-03T12:00:00",
+               "cost": 164.33
+            },
+            {
+               "from_datetime": "2023-04-03T12:00:00",
+               "to_datetime": "2023-04-03T13:00:00",
+               "cost": 212.04
+            },
+            {
+               "from_datetime": "2023-04-03T13:00:00",
+               "to_datetime": "2023-04-03T14:00:00",
+               "cost": 235.73
+            },
+            {
+               "from_datetime": "2023-04-03T14:00:00",
+               "to_datetime": "2023-04-03T15:00:00",
+               "cost": 176.37
+            },
+            {
+               "from_datetime": "2023-04-03T15:00:00",
+               "to_datetime": "2023-04-03T16:00:00",
+               "cost": 270.23
+            },
+            {
+               "from_datetime": "2023-04-03T16:00:00",
+               "to_datetime": "2023-04-03T17:00:00",
+               "cost": 293.19
+            },
+            {
+               "from_datetime": "2023-04-03T17:00:00",
+               "to_datetime": "2023-04-03T18:00:00",
+               "cost": 331.55
+            },
+            {
+               "from_datetime": "2023-04-03T18:00:00",
+               "to_datetime": "2023-04-03T19:00:00",
+               "cost": 285.82
+            },
+            {
+               "from_datetime": "2023-04-03T19:00:00",
+               "to_datetime": "2023-04-03T20:00:00",
+               "cost": 184.33
+            },
+            {
+               "from_datetime": "2023-04-03T20:00:00",
+               "to_datetime": "2023-04-03T21:00:00",
+               "cost": 279.75
+            },
+            {
+               "from_datetime": "2023-04-03T21:00:00",
+               "to_datetime": "2023-04-03T22:00:00",
+               "cost": 163.97
+            },
+            {
+               "from_datetime": "2023-04-03T22:00:00",
+               "to_datetime": "2023-04-03T23:00:00",
+               "cost": 115.73
+            },
+            {
+               "from_datetime": "2023-04-03T23:00:00",
+               "to_datetime": "2023-04-04T00:00:00",
+               "cost": 260.92
+            },
+            {
+               "from_datetime": "2023-04-04T00:00:00",
+               "to_datetime": "2023-04-04T01:00:00",
+               "cost": 330.38
+            },
+            {
+               "from_datetime": "2023-04-04T01:00:00",
+               "to_datetime": "2023-04-04T02:00:00",
+               "cost": 277.31
+            },
+            {
+               "from_datetime": "2023-04-04T02:00:00",
+               "to_datetime": "2023-04-04T03:00:00",
+               "cost": 200.37
+            },
+            {
+               "from_datetime": "2023-04-04T03:00:00",
+               "to_datetime": "2023-04-04T04:00:00",
+               "cost": 259.46
+            },
+            {
+               "from_datetime": "2023-04-04T04:00:00",
+               "to_datetime": "2023-04-04T05:00:00",
+               "cost": 221.44
+            },
+            {
+               "from_datetime": "2023-04-04T05:00:00",
+               "to_datetime": "2023-04-04T06:00:00",
+               "cost": 108.21
+            },
+            {
+               "from_datetime": "2023-04-04T06:00:00",
+               "to_datetime": "2023-04-04T07:00:00",
+               "cost": 213.52
+            },
+            {
+               "from_datetime": "2023-04-04T07:00:00",
+               "to_datetime": "2023-04-04T08:00:00",
+               "cost": 144.14
+            },
+            {
+               "from_datetime": "2023-04-04T08:00:00",
+               "to_datetime": "2023-04-04T09:00:00",
+               "cost": 225.65
+            },
+            {
+               "from_datetime": "2023-04-04T09:00:00",
+               "to_datetime": "2023-04-04T10:00:00",
+               "cost": 204.48
+            },
+            {
+               "from_datetime": "2023-04-04T10:00:00",
+               "to_datetime": "2023-04-04T11:00:00",
+               "cost": 249.48
+            },
+            {
+               "from_datetime": "2023-04-04T11:00:00",
+               "to_datetime": "2023-04-04T12:00:00",
+               "cost": 324.76
+            },
+            {
+               "from_datetime": "2023-04-04T12:00:00",
+               "to_datetime": "2023-04-04T13:00:00",
+               "cost": 328.81
+            },
+            {
+               "from_datetime": "2023-04-04T13:00:00",
+               "to_datetime": "2023-04-04T14:00:00",
+               "cost": 173.56
+            },
+            {
+               "from_datetime": "2023-04-04T14:00:00",
+               "to_datetime": "2023-04-04T15:00:00",
+               "cost": 96.49
+            },
+            {
+               "from_datetime": "2023-04-04T15:00:00",
+               "to_datetime": "2023-04-04T16:00:00",
+               "cost": 201.22
+            },
+            {
+               "from_datetime": "2023-04-04T16:00:00",
+               "to_datetime": "2023-04-04T17:00:00",
+               "cost": 204.12
+            },
+            {
+               "from_datetime": "2023-04-04T17:00:00",
+               "to_datetime": "2023-04-04T18:00:00",
+               "cost": 191.01
+            },
+            {
+               "from_datetime": "2023-04-04T18:00:00",
+               "to_datetime": "2023-04-04T19:00:00",
+               "cost": 167.68
+            },
+            {
+               "from_datetime": "2023-04-04T19:00:00",
+               "to_datetime": "2023-04-04T20:00:00",
+               "cost": 273.58
+            },
+            {
+               "from_datetime": "2023-04-04T20:00:00",
+               "to_datetime": "2023-04-04T21:00:00",
+               "cost": 321.38
+            },
+            {
+               "from_datetime": "2023-04-04T21:00:00",
+               "to_datetime": "2023-04-04T22:00:00",
+               "cost": 189.05
+            },
+            {
+               "from_datetime": "2023-04-04T22:00:00",
+               "to_datetime": "2023-04-04T23:00:00",
+               "cost": 128.62
+            },
+            {
+               "from_datetime": "2023-04-04T23:00:00",
+               "to_datetime": "2023-04-05T00:00:00",
+               "cost": 189.28
+            },
+            {
+               "from_datetime": "2023-04-05T00:00:00",
+               "to_datetime": "2023-04-05T01:00:00",
+               "cost": 100.08
+            },
+            {
+               "from_datetime": "2023-04-05T01:00:00",
+               "to_datetime": "2023-04-05T02:00:00",
+               "cost": 163.8
+            },
+            {
+               "from_datetime": "2023-04-05T02:00:00",
+               "to_datetime": "2023-04-05T03:00:00",
+               "cost": 333.12
+            },
+            {
+               "from_datetime": "2023-04-05T03:00:00",
+               "to_datetime": "2023-04-05T04:00:00",
+               "cost": 116.14
+            },
+            {
+               "from_datetime": "2023-04-05T04:00:00",
+               "to_datetime": "2023-04-05T05:00:00",
+               "cost": 306.84
+            },
+            {
+               "from_datetime": "2023-04-05T05:00:00",
+               "to_datetime": "2023-04-05T06:00:00",
+               "cost": 217.22
+            },
+            {
+               "from_datetime": "2023-04-05T06:00:00",
+               "to_datetime": "2023-04-05T07:00:00",
+               "cost": 283.52
+            },
+            {
+               "from_datetime": "2023-04-05T07:00:00",
+               "to_datetime": "2023-04-05T08:00:00",
+               "cost": 280.97
+            },
+            {
+               "from_datetime": "2023-04-05T08:00:00",
+               "to_datetime": "2023-04-05T09:00:00",
+               "cost": 308.79
+            },
+            {
+               "from_datetime": "2023-04-05T09:00:00",
+               "to_datetime": "2023-04-05T10:00:00",
+               "cost": 241.1
+            },
+            {
+               "from_datetime": "2023-04-05T10:00:00",
+               "to_datetime": "2023-04-05T11:00:00",
+               "cost": 281.52
+            },
+            {
+               "from_datetime": "2023-04-05T11:00:00",
+               "to_datetime": "2023-04-05T12:00:00",
+               "cost": 178.37
+            },
+            {
+               "from_datetime": "2023-04-05T12:00:00",
+               "to_datetime": "2023-04-05T13:00:00",
+               "cost": 158.92
+            },
+            {
+               "from_datetime": "2023-04-05T13:00:00",
+               "to_datetime": "2023-04-05T14:00:00",
+               "cost": 311.43
+            },
+            {
+               "from_datetime": "2023-04-05T14:00:00",
+               "to_datetime": "2023-04-05T15:00:00",
+               "cost": 325.06
+            },
+            {
+               "from_datetime": "2023-04-05T15:00:00",
+               "to_datetime": "2023-04-05T16:00:00",
+               "cost": 154.92
+            },
+            {
+               "from_datetime": "2023-04-05T16:00:00",
+               "to_datetime": "2023-04-05T17:00:00",
+               "cost": 221.09
+            },
+            {
+               "from_datetime": "2023-04-05T17:00:00",
+               "to_datetime": "2023-04-05T18:00:00",
+               "cost": 229.38
+            },
+            {
+               "from_datetime": "2023-04-05T18:00:00",
+               "to_datetime": "2023-04-05T19:00:00",
+               "cost": 125.05
+            },
+            {
+               "from_datetime": "2023-04-05T19:00:00",
+               "to_datetime": "2023-04-05T20:00:00",
+               "cost": 143.77
+            },
+            {
+               "from_datetime": "2023-04-05T20:00:00",
+               "to_datetime": "2023-04-05T21:00:00",
+               "cost": 154.9
+            },
+            {
+               "from_datetime": "2023-04-05T21:00:00",
+               "to_datetime": "2023-04-05T22:00:00",
+               "cost": 287.42
+            },
+            {
+               "from_datetime": "2023-04-05T22:00:00",
+               "to_datetime": "2023-04-05T23:00:00",
+               "cost": 301.63
+            },
+            {
+               "from_datetime": "2023-04-05T23:00:00",
+               "to_datetime": "2023-04-06T00:00:00",
+               "cost": 133.55
+            },
+            {
+               "from_datetime": "2023-04-06T00:00:00",
+               "to_datetime": "2023-04-06T01:00:00",
+               "cost": 158.27
+            },
+            {
+               "from_datetime": "2023-04-06T01:00:00",
+               "to_datetime": "2023-04-06T02:00:00",
+               "cost": 255.42
+            },
+            {
+               "from_datetime": "2023-04-06T02:00:00",
+               "to_datetime": "2023-04-06T03:00:00",
+               "cost": 223.07
+            },
+            {
+               "from_datetime": "2023-04-06T03:00:00",
+               "to_datetime": "2023-04-06T04:00:00",
+               "cost": 117.97
+            },
+            {
+               "from_datetime": "2023-04-06T04:00:00",
+               "to_datetime": "2023-04-06T05:00:00",
+               "cost": 161.05
+            },
+            {
+               "from_datetime": "2023-04-06T05:00:00",
+               "to_datetime": "2023-04-06T06:00:00",
+               "cost": 219.23
+            },
+            {
+               "from_datetime": "2023-04-06T06:00:00",
+               "to_datetime": "2023-04-06T07:00:00",
+               "cost": 157.64
+            }
+         ],
+         "consumption_multiplier": 1000.0
+      }
+   },
+   "initial_solution": null
+}

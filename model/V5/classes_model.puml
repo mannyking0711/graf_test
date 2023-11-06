@@ -1,0 +1,198 @@
+@startuml classes_model
+set namespaceSeparator none
+class "DependencyItem" as scenario.DependencyItem #aliceblue {
+  consumption : float
+  max_time : int
+  min_time : int
+  task_id1 : int
+  task_id2 : int
+}
+class "EnergySource" as scenario.EnergySource #aliceblue {
+  charge_intervals : List[EnergySourceInterval]
+  name : str
+  setup_time : Optional[conint(ge=0.0)]
+  shutdown_time : Optional[conint(ge=0.0)]
+  add_charge_interval(charge_interval: EnergySourceInterval)
+  fix_after_load_from_json(base: datetime)
+  get_charge_per_minute()
+  setup_charge_per_minute()
+}
+class "EnergySourceInterval" as scenario.EnergySourceInterval #aliceblue {
+  cost : float
+  from_datetime : datetime
+  max_energy : Optional[float]
+  min_energy : Optional[confloat(ge=0.0)]
+  to_datetime : datetime
+  datetime_int(base: datetime)
+}
+class "Factory" as scenario.Factory #aliceblue {
+  energy_source_names : List[str]
+  id : int
+  machines : Dict[int, Machine]
+  name : str
+  operators : Optional[Dict[int, Operator]]
+  add_machine(machine: Machine)
+  eligible_machines_for_task(job_id: int, task_id: int)
+  fix_after_load_from_json(base: datetime, energy_sources: Dict[str, EnergySource])
+  get_charge_per_minute()
+  get_machines()
+  setup_time_consumption(machine_id: int, attr1: int, attr2: int)
+  tasks_that_can_be_executed_at_machine(machine_id: int)
+}
+class "Job" as scenario.Job #aliceblue {
+  attribute : Optional[int]
+  earliest_start_time : datetime
+  id : int
+  latest_finish_time : Optional[datetime]
+  task_dependencies : Optional[List[DependencyItem]]
+  tasks : Dict[int, Task]
+  datetime_int(base: datetime)
+}
+class "Machine" as scenario.Machine #aliceblue {
+  id : int
+  idle_consumption : Optional[confloat(ge=0.0)]
+  name : str
+  operational_modes : Dict[int, MachineOperationalMode]
+  setup : Optional[List[SetupProperties]]
+  unavailable : Optional[List[UnavailablePeriod]]
+  add_machine_setup(setup: SetupProperties)
+  add_machine_unavailability(ump: UnavailablePeriod)
+  add_machine_use(usage: TaskResourceUseProperties, op_mode: int)
+  eligible_for_task(job_id, task_id)
+  fix_after_load_from_json(base: datetime)
+  setup_time_consumption_from_attr1_to_attr2(attr1, attr2)
+}
+class "MachineOperationalMode" as scenario.MachineOperationalMode #aliceblue {
+  description : Optional[str]
+  id : int
+  task_operation : Optional[List[TaskResourceUseProperties]]
+  add(to: TaskResourceUseProperties)
+  fix_after_load_from_json(base: datetime)
+  get_resource_use(job_id: int, task_id: int)
+}
+class "Operator" as scenario.Operator #aliceblue {
+  id : int
+  machines : List[int]
+  name : str
+  unavailable : Optional[List[UnavailablePeriod]]
+  fix_after_load_from_json(base: datetime)
+}
+class "Parameters" as scenario.Parameters #aliceblue {
+  energy_measurement_unit : str
+  generated_datetime : Optional[datetime]
+  id : str
+  max_solution_time_in_secs : Optional[conint(ge=20.0)]
+  scenario : str
+  solver : Optional[str]
+  time_granularity_in_minutes
+  weight_vector : Optional[List[WeightVectorItem]]
+}
+class "Problem" as scenario.Problem #aliceblue {
+  factories : Dict[int, Factory]
+  finish_time : datetime
+  task_attributes : Dict[int, TaskAttribute]
+  jobs : Dict[int, Job]
+  start_time : datetime
+  add_factory(factory: Factory)
+  add_job(job: Job)
+  datetime_int()
+  eligible_machines_for_task(job_id: int, task_id: int)
+  fix_after_load_from_json(energy_sources: Dict[str, EnergySource])
+  get_charge_per_minute(factory_id: int)
+  get_cost_for_job_task_machine_at_time(job_id, task_id, machine_id, time, factory_id)
+  job_tasks_that_can_be_executed_at_machine(machine_id: int, factory_id: int)
+  setup_charge_per_minute()
+  setup_time_consumption(machine_id, previous_job_id, previous_task_id, current_job_id, current_task_id, factory_id: int)
+}
+class "Product" as scenario.Product #aliceblue {
+  id : str
+  name : str
+  volume
+}
+class "Scenario" as scenario.Scenario #aliceblue {
+  energy_sources : Dict[str, EnergySource]
+  initial_solution : Optional[Solution]
+  parameters
+  problem
+  fix_after_load_from_json()
+}
+class "ScheduleItem" as scenario.ScheduleItem #aliceblue {
+  consumption : float
+  cost : float
+  factory_id : int
+  finish_time : datetime
+  job_id : int
+  machine_id : int
+  machine_mode : int
+  start_time : datetime
+  task_id : int
+}
+class "SetupProperties" as scenario.SetupProperties #aliceblue {
+  consumption : float
+  task_attribute1 : int
+  task_attribute2 : int
+  time : int
+}
+class "Solution" as scenario.Solution #aliceblue {
+  generated_date : datetime
+  id : str
+  problem : Problem
+  problem_id : str
+  schedule : Dict[Tuple[int, int], ScheduleItem]
+  cost()
+  finish_time()
+  get_consumption()
+  schedule_job_to_machine(job_id: int, task_id: int, factory_id: int, machine_id: int, machine_mode: int, start_time: int, duration: int, cost: float, total_consumption: float)
+}
+class "Task" as scenario.Task #aliceblue {
+  attribute : int
+  earliest_start_time : datetime
+  id : int
+  job_id : int
+  latest_finish_time : Optional[datetime]
+  datetime_int(base: datetime)
+  get_earliest_start_time() -> int
+  get_latest_finish_time() -> int
+}
+class "TaskAttribute" as scenario.TaskAttribute #aliceblue {
+  attribute_id : int
+  description : Optional[str]
+}
+class "TaskResourceUseProperties" as scenario.TaskResourceUseProperties #aliceblue {
+  consumption : float
+  job_id : int
+  operators : Optional[int]
+  task_id : int
+  time : int
+}
+class "UnavailablePeriod" as scenario.UnavailablePeriod #aliceblue {
+  description : Optional[str]
+  from_datetime : datetime
+  to_datetime : datetime
+  datetime_int(base: datetime)
+}
+class "WeightVectorItem" as scenario.WeightVectorItem #aliceblue {
+}
+scenario.Parameters -- scenario.Scenario : parameters
+scenario.Parameters *-- scenario.WeightVectorItem : weight_vector
+scenario.Problem -- scenario.Scenario : problem
+scenario.Scenario *-- scenario.Solution : solutions
+scenario.Scenario *-- scenario.EnergySource : energy_sources
+scenario.EnergySource *-- scenario.EnergySourceInterval : charge_intervals
+scenario.Scenario -- scenario.Solution: initial_solution
+scenario.Solution *-- scenario.ScheduleItem : schedule
+scenario.Problem *-- scenario.Factory : factories
+scenario.Problem *-- scenario.TaskAttribute : task_attributes
+scenario.Problem *-- scenario.Job : jobs
+scenario.Factory *-- scenario.Machine : machines
+scenario.Factory *-- scenario.Operator : operators
+scenario.Machine *-- scenario.UnavailablePeriod : unavailable
+scenario.Machine *-- scenario.SetupProperties : setup
+scenario.Machine *-- scenario.MachineOperationalMode : operational_modes
+scenario.MachineOperationalMode *-- scenario.TaskResourceUseProperties : task_operation
+scenario.Operator *-- scenario.UnavailablePeriod : unavailable
+scenario.Job *-- scenario.Task : tasks
+scenario.Job *-- scenario.DependencyItem : task_dependencies
+scenario.Job -- scenario.Product : product
+
+@enduml

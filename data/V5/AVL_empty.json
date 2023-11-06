@@ -1,0 +1,4435 @@
+{
+   "parameters": {
+      "id": "1",
+      "scenario": "scenario1",
+      "generated_datetime": "2023-06-29T22:01:24.350566",
+      "energy_measurement_unit": "kWh",
+      "resources": {
+         "Electricity": {
+            "name": "Electricity",
+            "measurement_unit": "KWh",
+            "measurement_type": "CONTINUES"
+         },
+         "Cooling": {
+            "name": "Cooling",
+            "measurement_unit": "KWh",
+            "measurement_type": "CONTINUES"
+         },
+         "Heating": {
+            "name": "Heating",
+            "measurement_unit": "KWh",
+            "measurement_type": "CONTINUES"
+         },
+         "Time": {
+            "name": "Working Time",
+            "measurement_unit": "min",
+            "measurement_type": "DISCRETE"
+         }
+      },
+      "time_granularity_in_minutes": 1,
+      "weight_vector": [
+         10,
+         1,
+         1000,
+         10,
+         1
+      ],
+      "solver": "CPSolver",
+      "max_solution_time_in_secs": 60
+   },
+   "problem": {
+      "start_time": "2023-06-29T22:01:24.350566",
+      "finish_time": "2023-06-29T22:01:24.350566",
+      "task_attributes": {
+         "0": {
+            "attribute_id": 0,
+            "description": "T23",
+            "state": {
+               "Temperature": 23.0,
+               "Humidity": 45.0
+            }
+         },
+         "1": {
+            "attribute_id": 1,
+            "description": "T8",
+            "state": {
+               "Temperature": 8.0,
+               "Humidity": 75.0
+            }
+         },
+         "2": {
+            "attribute_id": 2,
+            "description": "T25",
+            "state": {
+               "Temperature": 25.0,
+               "Humidity": 41.0
+            }
+         },
+         "3": {
+            "attribute_id": 3,
+            "description": "T35",
+            "state": {
+               "Temperature": 35.0,
+               "Humidity": 27.0
+            }
+         },
+         "4": {
+            "attribute_id": 4,
+            "description": "T10",
+            "state": {
+               "Temperature": 10.0,
+               "Humidity": 75.0
+            }
+         },
+         "5": {
+            "attribute_id": 5,
+            "description": "T-7",
+            "state": {
+               "Temperature": -7.0,
+               "Humidity": 85.0
+            }
+         },
+         "6": {
+            "attribute_id": 6,
+            "description": "T-10",
+            "state": {
+               "Temperature": -10.0,
+               "Humidity": 85.0
+            }
+         },
+         "7": {
+            "attribute_id": 7,
+            "description": "T0",
+            "state": {
+               "Temperature": 0.0,
+               "Humidity": 85.0
+            }
+         },
+         "8": {
+            "attribute_id": 8,
+            "description": "T1",
+            "state": {
+               "Temperature": 1.0,
+               "Humidity": 85.0
+            }
+         },
+         "9": {
+            "attribute_id": 9,
+            "description": "T14",
+            "state": {
+               "Temperature": 14.0,
+               "Humidity": 68.0
+            }
+         }
+      },
+      "jobs": {},
+      "factories": {
+         "0": {
+            "id": 0,
+            "name": "Factory0",
+            "energy_source_names": [
+               "Default Market"
+            ],
+            "machines": {
+               "0": {
+                  "id": 0,
+                  "name": "TB401_GRZ",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     2,
+                     3
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.03
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 3,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 3,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 0,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 12.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 2,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 3,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": []
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1
+               },
+               "1": {
+                  "id": 1,
+                  "name": "TB402_GRZ",
+                  "unavailable": null,
+                  "can_process": [
+                     0,
+                     2,
+                     3
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.03
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 3,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 3,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 0,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 12.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 2,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 3,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": []
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1
+               },
+               "2": {
+                  "id": 2,
+                  "name": "TB403_GRZ",
+                  "unavailable": null,
+                  "can_process": [
+                     6,
+                     5,
+                     7,
+                     8,
+                     1,
+                     4,
+                     9,
+                     0,
+                     2,
+                     3
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.03
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 3,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 4,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 5,
+                        "time": 30,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 35.1
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 79.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 6,
+                        "time": 33,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 42.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 95.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 7,
+                        "time": 23,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 46.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 8,
+                        "time": 22,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 18.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 42.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 9,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 2,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 13.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 3,
+                        "time": 27,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 34.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 26.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 4,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 5,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 6,
+                        "time": 18,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 12.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 28.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 7,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 8,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 9,
+                        "time": 6,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 1,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 11.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 25.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 3,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 4,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 5,
+                        "time": 32,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 39.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 90.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 6,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 47.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 107.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 7,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 55.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 8,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 50.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 9,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 0,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 12.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 1,
+                        "time": 27,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 28.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 64.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 2,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 3,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 4,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 55.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 5,
+                        "time": 42,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 68.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 155.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 6,
+                        "time": 45,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 79.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 178.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 7,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 47.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 107.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 8,
+                        "time": 34,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 45.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 101.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 9,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 17.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 38.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 0,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 1,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 2,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 3,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 29.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 22.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 4,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 5,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 11.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 25.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 6,
+                        "time": 20,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 15.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 35.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 7,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 8,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 9,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.1
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 0,
+                        "time": 30,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 42.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 7.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 32.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 1,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 2,
+                        "time": 32,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 48.1
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 8.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 36.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 3,
+                        "time": 42,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 82.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 14.1
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 63.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 4,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 13.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 5,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 6,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 7,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 8,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 9,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 15.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 0,
+                        "time": 33,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 51.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 8.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 39.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 1,
+                        "time": 18,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 15.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 11.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 2,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 57.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 44.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 3,
+                        "time": 45,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 95.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 16.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 72.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 4,
+                        "time": 20,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 18.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 5,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.07
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 6,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 7,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 8,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 9,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 27.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 20.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 0,
+                        "time": 23,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 1,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 2,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 29.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 22.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 3,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 57.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 44.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 4,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 5,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 6,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 7,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 8,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.05
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.008
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.04
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 9,
+                        "time": 14,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 9.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 0,
+                        "time": 22,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 17.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 1,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 2,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 27.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 20.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 3,
+                        "time": 34,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 54.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 41.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 4,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 5,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 6,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 7,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.04
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.09
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 8,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 9,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 7.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 6.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 0,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 1,
+                        "time": 6,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 2,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 3,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 15.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 4,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 5,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 17.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 38.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 6,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 50.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 7,
+                        "time": 14,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 7.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 17.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 8,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 9,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": []
+                     }
+                  },
+                  "processing_type": "SEQUENTIAL",
+                  "consumption_aggregation": "ADDITIVE",
+                  "capacity": 1
+               },
+               "3": {
+                  "id": 3,
+                  "name": "CR1_GRZ",
+                  "unavailable": null,
+                  "can_process": [
+                     0
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": []
+                     }
+                  },
+                  "processing_type": "CASCADING",
+                  "consumption_aggregation": "MAXIMUM",
+                  "capacity": 80
+               },
+               "4": {
+                  "id": 4,
+                  "name": "CR2_GRZ",
+                  "unavailable": null,
+                  "can_process": [
+                     6,
+                     5,
+                     7,
+                     8,
+                     1,
+                     4,
+                     9,
+                     0,
+                     2,
+                     3
+                  ],
+                  "setup": [
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 0,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 1,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 2,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.03
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 3,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 4,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 5,
+                        "time": 30,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 35.1
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 79.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 6,
+                        "time": 33,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 42.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 95.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 7,
+                        "time": 23,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 46.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 8,
+                        "time": 22,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 18.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 42.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 0,
+                        "task_attribute2": 9,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 0,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 1,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 2,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 13.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 3,
+                        "time": 27,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 34.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 26.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 4,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 5,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 6,
+                        "time": 18,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 12.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 28.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 7,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 8,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 1,
+                        "task_attribute2": 9,
+                        "time": 6,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 0,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 1,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 11.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 25.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 2,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 3,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 4,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 8.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 5,
+                        "time": 32,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 39.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 90.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 6,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 47.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 107.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 7,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 55.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 8,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 50.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 2,
+                        "task_attribute2": 9,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 0,
+                        "time": 12,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 12.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 1,
+                        "time": 27,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 28.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 64.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 2,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 3,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 4,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 55.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 5,
+                        "time": 42,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 68.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 155.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 6,
+                        "time": 45,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 79.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 178.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 7,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 47.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 107.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 8,
+                        "time": 34,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 45.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 101.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 3,
+                        "task_attribute2": 9,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 17.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 38.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 0,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 1,
+                        "time": 2,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 2,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 3,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 29.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 22.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 4,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 5,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 11.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 25.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 6,
+                        "time": 20,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 15.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 35.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 7,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 8,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 4,
+                        "task_attribute2": 9,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.1
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 0,
+                        "time": 30,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 42.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 7.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 32.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 1,
+                        "time": 15,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 10.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 2,
+                        "time": 32,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 48.1
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 8.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 36.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 3,
+                        "time": 42,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 82.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 14.1
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 63.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 4,
+                        "time": 17,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 13.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 5,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 6,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 7,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 8,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 5,
+                        "task_attribute2": 9,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 15.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 0,
+                        "time": 33,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 51.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 8.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 39.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 1,
+                        "time": 18,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 15.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 2.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 11.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 2,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 57.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 44.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 3,
+                        "time": 45,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 95.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 16.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 72.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 4,
+                        "time": 20,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 18.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 5,
+                        "time": 3,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.07
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 6,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 7,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 8,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 6,
+                        "task_attribute2": 9,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 27.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 20.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 0,
+                        "time": 23,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 24.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.2
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 19.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 1,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 2,
+                        "time": 25,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 29.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 5.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 22.5
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 3,
+                        "time": 35,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 57.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 44.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 4,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.8
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 5,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 6,
+                        "time": 10,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 8.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 7,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 8,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.05
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.008
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.04
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 7,
+                        "task_attribute2": 9,
+                        "time": 14,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 9.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 7.1
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 0,
+                        "time": 22,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.9
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 17.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 1,
+                        "time": 7,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 2.3
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 2,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 27.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 4.6
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 20.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 3,
+                        "time": 34,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 54.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 9.3
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 41.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 4,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 5,
+                        "time": 8,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 5.6
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 6,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 4.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 10.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 7,
+                        "time": 1,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.04
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.09
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 8,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 8,
+                        "task_attribute2": 9,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 7.9
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.4
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 6.0
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 0,
+                        "time": 9,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 3.8
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.7
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 2.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 1,
+                        "time": 6,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 1.4
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 3.2
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 2,
+                        "time": 11,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 5.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 1.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 4.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 3,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 20.7
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 3.5
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 15.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 4,
+                        "time": 4,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 1.4
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 5,
+                        "time": 21,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 17.2
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 38.8
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 6,
+                        "time": 24,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 22.5
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 50.7
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 7,
+                        "time": 14,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 7.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 17.3
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 8,
+                        "time": 13,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 6.6
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 14.9
+                           }
+                        ]
+                     },
+                     {
+                        "task_attribute1": 9,
+                        "task_attribute2": 9,
+                        "time": 0,
+                        "consumptions": [
+                           {
+                              "resource_name": "Electricity",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Heating",
+                              "consumption": 0.0
+                           },
+                           {
+                              "resource_name": "Cooling",
+                              "consumption": 0.0
+                           }
+                        ]
+                     }
+                  ],
+                  "operational_modes": {
+                     "0": {
+                        "id": 0,
+                        "description": "",
+                        "task_operation": []
+                     }
+                  },
+                  "processing_type": "CASCADING",
+                  "consumption_aggregation": "MAXIMUM",
+                  "capacity": 7
+               }
+            },
+            "cost_components": {
+               "Electricity": {
+                  "name": "Electricity Cost",
+                  "resource_name": "Electricity",
+                  "cost_intervals": []
+               }
+            }
+         }
+      }
+   },
+   "energy_sources": {},
+   "initial_solution": {
+      "id": 1,
+      "problem_id": "1",
+      "generated_date": "2023-06-29T22:01:26.605531",
+      "schedule": []
+   }
+}
